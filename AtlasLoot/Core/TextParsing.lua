@@ -1107,6 +1107,9 @@ function AtlasLoot_FixText(text)
 	text = gsub(text, "#valentineday#", "|TInterface\\Icons\\inv_valentinescard01:0|t");
 	text = gsub(text, "#valentineday2#", "|TInterface\\Icons\\inv_jewelry_necklace_43:0|t");
 	text = gsub(text, "#necroticrune#", "|TInterface\\Icons\\Inv_stone_02:0|t");
+	text = gsub(text, "#normaltrinket#", "|TInterface\\Icons\\Inv_misc_trinket6oog_tablet1:0|t");
+	text = gsub(text, "#heroictrinket#", "|TInterface\\Icons\\trinket_currency_heroic:0|t");
+	text = gsub(text, "#mythictrinket#", "|TInterface\\Icons\\trinket_currency_mythic:0|t");
 
     englishFaction, _ = UnitFactionGroup("player")
     if englishFaction == "Horde" then

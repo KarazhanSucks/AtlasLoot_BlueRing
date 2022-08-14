@@ -136,10 +136,24 @@ if AL then
 	AL["Close Menu"] = true;
 	
 	-- AtlasLoot Blue Ring Private Server
+	AL["Blue Ring Vendor"] = true;
 	AL["Blue Ring: Phase 1"] = true;
 	AL["Blue Ring: Phase 2"] = true;
 	AL["Blue Ring: Phase 3"] = true;
+	AL["Blue Ring: Phase 4"] = true;
+	AL["Blue Ring: Phase 5"] = true;
 	AL["PvP Off-Set"] = true;
+	AL["Level 20 Bracket"] = true;
+	AL["Level 30 Bracket"] = true;
+	AL["Level 40 Bracket"] = true;
+	AL["Level 50 Bracket"] = true;
+	AL["Level 60 Bracket"] = true;
+	AL["Phase 1 Sets"] = true;
+	AL["Phase 2 Sets"] = true;
+	AL["Phase 3 Sets"] = true;
+	AL["Phase 4 Sets"] = true;
+	AL["Phase 5 Sets"] = true;
+	AL["BoE Dungeon Rares"] = true;
 
 	-- Crafting Menu
 	AL["Crafting Daily Quests"] = true;

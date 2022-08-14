@@ -30,6 +30,25 @@ function AtlasLoot_GetEnchantLink(enchantID)
    return EnchantLink
 end
 
+--BlueRing set default value
+local function SetBlueRingDefaultValueBasedOnPhase(stringBlueRingPhase, boolBlueRingHeroic)
+	--we are in phase 1
+	if stringBlueRingPhase == "BRP1" then
+		if boolBlueRingHeroic then
+			return 2080
+		else
+			return 4132
+		end
+	elseif stringBlueRingPhase == "BRP2" then
+		if boolBlueRingHeroic then
+			return 2087
+		else
+			return 4139
+		end
+	else
+		return 0
+	end
+end
 --------------------------------------------------------------------------------
 -- Item OnEnter
 -- Called when a loot item is moused over
@@ -48,13 +67,14 @@ function AtlasLootItem_OnEnter()
         else
             isItem = true;
         end
-        if isItem then		
-			--Bluering Private Server value, default to mythic (4132), heroic value is 2080
-			local defaultBlueRingBaseValue = 4132
-			--set it to heroic value
-			if this.blueRingHeroic then
-				defaultBlueRingBaseValue = 2080
+        if isItem then
+			--Bluering Private Server value
+			local defaultBlueRingBaseValue = 0
+			--we are in a BlueRingPhase loottable
+			if this.blueRingPhase then
+				defaultBlueRingBaseValue = SetBlueRingDefaultValueBasedOnPhase(this.blueRingPhase, this.blueRingHeroic)
 			end
+			
             local color = strsub(getglobal("AtlasLootItem_"..this:GetID().."_Name"):GetText(), 3, 10);
             local name = strsub(getglobal("AtlasLootItem_"..this:GetID().."_Name"):GetText(), 11);
             if(this.itemID ~= 0 and this.itemID ~= "" and this.itemID ~= nil and AtlasLootDKPValues and AtlasLootClassPriority) then
@@ -73,8 +93,8 @@ function AtlasLootItem_OnEnter()
                     getglobal(this:GetName().."_Unsafe"):Hide();
                     AtlasLootTooltip:SetOwner(this, "ANCHOR_RIGHT", -(this:GetWidth() / 2), 24);
 					--adjusted for Bluering Private Server
-					--check if we are in phase 1
-					if this.blueRingPhase and this.blueRingPhase == "BRP1" then
+					--check if we are in a phase
+					if this.blueRingPhase then
 						AtlasLootTooltip:SetHyperlink("item:"..this.itemID..":0:0:0:0:0:0:"..(defaultBlueRingBaseValue-select(4,GetItemInfo(this.itemID))))
 					--proceed with "classic" behaviour
 					else
@@ -98,8 +118,8 @@ function AtlasLootItem_OnEnter()
                     end
                     if (LootLink_AddItem) then
 						--adjusted for Bluering Private Server
-						--check if we are in phase 1
-						if this.blueRingPhase and this.blueRingPhase == "BRP1" then
+						--check if we are in a phase
+						if this.blueRingPhase then
 							LootLink_AddItem(name, this.itemID..":0:0:0:0:0:0:"..(defaultBlueRingBaseValue-select(4,GetItemInfo(this.itemID))), color);
 						--proceed with "classic" behaviour
 						else
@@ -159,8 +179,8 @@ function AtlasLootItem_OnEnter()
                         getglobal(this:GetName().."_Unsafe"):Hide();
                         AtlasLootTooltip:SetOwner(this, "ANCHOR_RIGHT", -(this:GetWidth() / 2), 24);						
 						--adjusted for Bluering Private Server
-						--check if we are in phase 1
-						if this.blueRingPhase and this.blueRingPhase == "BRP1" then
+						--check if we are in a phase
+						if this.blueRingPhase then
 							AtlasLootTooltip:SetHyperlink("item:"..this.itemID..":0:0:0:0:0:0:"..(defaultBlueRingBaseValue-select(4,GetItemInfo(this.itemID))))
 						--proceed with "classic" behaviour
 						else
@@ -245,13 +265,14 @@ function AtlasLootItem_OnClick(arg1)
 	else
 		isItem = true;
 	end
-    if isItem then		
-		--Bluering Private Server value, default to mythic (4132), heroic value is 2080
-		local defaultBlueRingBaseValue = 4132
-		--set it to heroic value
-		if this.blueRingHeroic then
-			defaultBlueRingBaseValue = 2080
+    if isItem then
+		--Bluering Private Server value
+		local defaultBlueRingBaseValue = 0
+		--we are in a BlueRingPhase loottable
+		if this.blueRingPhase then
+			defaultBlueRingBaseValue = SetBlueRingDefaultValueBasedOnPhase(this.blueRingPhase, this.blueRingHeroic)
 		end
+		
         local iteminfo = GetItemInfo(this.itemID);
         local itemName, itemLink, itemQuality, itemLevel, itemMinLevel, itemType, itemSubType, itemCount, itemEquipLoc, itemTexture = GetItemInfo(this.itemID);
         --If shift-clicked, link in the chat window
@@ -271,8 +292,8 @@ function AtlasLootItem_OnClick(arg1)
         elseif(IsShiftKeyDown() and iteminfo and (AtlasLoot.db.profile.SafeLinks or AtlasLoot.db.profile.AllLinks)) then
 			--adjusted for Bluering Private Server
 			--check if we are in phase 1
-			if this.blueRingPhase and this.blueRingPhase == "BRP1" then
-				ChatEdit_InsertLink(string.gsub(itemLink, "0:20", defaultBlueRingBaseValue-select(4,GetItemInfo(this.itemID))..":20"));
+			if this.blueRingPhase then
+				ChatEdit_InsertLink(string.gsub(itemLink, "0:"..UnitLevel("player"), defaultBlueRingBaseValue-select(4,GetItemInfo(this.itemID))..":"..UnitLevel("player")));
 			else
 				ChatEdit_InsertLink(itemLink);
 			end			

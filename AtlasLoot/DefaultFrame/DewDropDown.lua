@@ -275,13 +275,44 @@ AtlasLoot_DewDropDown = {
 				{ BabbleZone["Wailing Caverns"], "WailingCaverns1BRP1", "Table" },
 			},
 			[5] = {
-				{ AL["Classic Sets"], "SETSBRP1", "Table" },
+				{ AL["Classic Sets"], "SET20SBRP1", "Table" },
 			},
 			[6] = {
 				{ AL["BoE World Rares"], "WorldRaresBRP1", "Table" },
 			},
 			[7] = {
 				{ AL["PvP Rewards"], "PVPMENUBRP1", "Table" },
+			},
+		},
+	},
+	[11] = {
+		[AL["Blue Ring: Phase 2"]] = {
+			[1] = {
+				{ BabbleZone["Blackfathom Deeps"], "BlackfathomDeeps1BRP2", "Table" },
+			},
+			[2] = {
+				{ BabbleZone["The Deadmines"], "TheDeadmines1BRP2", "Table" },
+			},
+			[3] = {
+				{ BabbleZone["Gnomeregan"], "Gnomeregan1BRP2", "Table" },
+			},
+			[4] = {
+				{ BabbleZone["Ragefire Chasm"], "RagefireChasmBRP2", "Table" },
+			},
+			[5] = {
+				{ BabbleZone["Razorfen Kraul"], "RazorfenKraul1BRP2", "Table" },
+			},
+			[6] = {
+				{ BabbleZone["Shadowfang Keep"], "ShadowfangKeep1BRP2", "Table" },
+			},
+			[7] = {
+				{ BabbleZone["The Stockade"], "TheStockadeBRP2", "Table" },
+			},
+			[8] = {
+				{ BabbleZone["Wailing Caverns"], "WailingCaverns1BRP2", "Table" },
+			},
+			[9] = {
+				{ AL["Sets/Collections"], "COLLECTIONMENUBRP2", "Table" },
 			},
 		},
 	},

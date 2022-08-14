@@ -543,12 +543,12 @@ end
 AtlasLoot_ShowItemsFrame(dataID, dataSource, boss, pFrame):
 dataID - Name of the loot table
 dataSource - Table in the database where the loot table is stored
-boss - Text string to use as a title for the loot page
+boss - Text string to use as a title for the loot page; BlueRing change: I added a potentially bad hack by sending original dataID via boss parameter
 pFrame - Data structure describing how and where to anchor the item frame (more details, see the function AtlasLoot_SetItemInfoFrame)
 This fuction is not normally called directly, it is usually invoked by AtlasLoot_ShowBossLoot.
 It is the workhorse of the mod and allows the loot tables to be displayed any way anywhere in any mod.
 ]]
-function AtlasLoot_ShowItemsFrame(dataID, dataSource, boss, pFrame)
+function AtlasLoot_ShowItemsFrame(dataID, dataSource, boss, pFrame, ...)
 	--Set up local variables needed for GetItemInfo, etc
 	local itemName, itemLink, itemQuality, itemLevel, itemType, itemSubType, itemCount, itemEquipLoc, itemTexture, itemColor;
 	local iconFrame, nameFrame, extraFrame, itemButton;
@@ -641,7 +641,6 @@ function AtlasLoot_ShowItemsFrame(dataID, dataSource, boss, pFrame)
         AtlasLoot_GenerateAtlasMenu(dataID, pFrame);
         return;
     end
-
 	-- Create the loottable
 	if (dataID == "SearchResult") or (dataID == "WishList") or (AtlasLoot_IsLootTableAvailable(dataID)) then
 		--Iterate through each item object and set its properties
@@ -791,9 +790,17 @@ function AtlasLoot_ShowItemsFrame(dataID, dataSource, boss, pFrame)
 				--is there a dataID
 				if dataID then
 					--check for the "normal" display of bluering mythic/heroic
-					if string.find(dataID,"(BRP(%d+))") and (not string.find(dataID,"PVP")) then
+					if (string.find(dataID,"(BRP(%d+))") and (not string.find(dataID,"PVP"))) then
 						itemButton.blueRingPhase = string.match(dataID,"(BRP(%d+))");
 						if string.find(dataID,"HEROIC") then
+							itemButton.blueRingHeroic = true;
+						else
+							itemButton.blueRingHeroic = false;
+						end
+					--check if ... variable is used to store BRP data
+					elseif ... and (string.find(...,"(BRP(%d+))") and (not string.find(...,"PVP"))) then
+						itemButton.blueRingPhase = string.match(...,"(BRP(%d+))");
+						if string.find(...,"HEROIC") then
 							itemButton.blueRingHeroic = true;
 						else
 							itemButton.blueRingHeroic = false;
