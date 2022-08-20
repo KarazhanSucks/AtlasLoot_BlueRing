@@ -6,6 +6,7 @@ local BabbleZone = AtlasLoot_GetLocaleLibBabble("LibBabble-Zone-3.0")
 
 
 -- Index
+
 --- Dungeons & Raids 20
 ---- The Deadmines 20
 ---- Ragefire Chasm 20
@@ -140,10 +141,18 @@ local BabbleZone = AtlasLoot_GetLocaleLibBabble("LibBabble-Zone-3.0")
 		{ 2, 14149, "", "=q3=Subterranean Cape", "=ds=#s4#", "", "40%"};
 		{ 3, 14148, "", "=q3=Crystalline Cuffs", "=ds=#s8#, #a1#", "", "40%"};
 		{ 4, 14145, "", "=q3=Cursed Felblade", "=ds=#h1#, #w10#", "", "20%"};
+		{ 6, 0, "INV_Box_01", "=q6="..BabbleBoss["Oggleflint"], ""};
+		{ 7, 618, "", "=q3=Sage's Mantle", "=ds=#s3#, #a1#", "", "33.33%"};
+		{ 8, 613, "", "=q3=Slayer's Helm", "=ds=#s1#, #a3#", "", "33.33%"};
+		{ 9, 604, "", "=q3=Oggleflint's Inspirer", "=ds=#h1#, #w6#", "", "33.33%"};
 		{ 16, 0, "INV_Box_01", "=q6="..BabbleBoss["Jergosh the Invoker"], ""};
 		{ 17, 14150, "", "=q3=Robe of Evocation", "=ds=#s5#, #a1#", "", "40%"};
 		{ 18, 14147, "", "=q3=Cavedweller Bracers", "=ds=#s8#, #a3#", "", "40%"};
 		{ 19, 14151, "", "=q3=Chanting Blade", "=ds=#h1#, #w4#", "", "20%"};
+		{ 21, 0, "INV_Box_01", "=q6="..BabbleBoss["Bazzalan"], ""};
+		{ 22, 605, "", "=q3=Warden's Helm", "=ds=#s1#, #a2#", "", "33.33%"};
+		{ 23, 615, "", "=q3=Slayer's Pads", "=ds=#s3#, #a3#", "", "33.33%"};
+		{ 24, 616, "", "=q3=Sword of Bazzalan", "=ds=#h1#, #w10#", "", "33.33%"};
 	};
 
 	AtlasLoot_Data["RagefireChasmBRP1HEROIC"] = {
@@ -151,10 +160,18 @@ local BabbleZone = AtlasLoot_GetLocaleLibBabble("LibBabble-Zone-3.0")
 		{ 2, 14149, "", "=q3=Subterranean Cape", "=ds=#s4#", "", "40%"};
 		{ 3, 14148, "", "=q3=Crystalline Cuffs", "=ds=#s8#, #a1#", "", "40%"};
 		{ 4, 14145, "", "=q3=Cursed Felblade", "=ds=#h1#, #w10#", "", "20%"};
+		{ 6, 0, "INV_Box_01", "=q6="..BabbleBoss["Oggleflint"], ""};
+		{ 7, 618, "", "=q3=Sage's Mantle", "=ds=#s3#, #a1#", "", "33.33%"};
+		{ 8, 613, "", "=q3=Slayer's Helm", "=ds=#s1#, #a3#", "", "33.33%"};
+		{ 9, 604, "", "=q3=Oggleflint's Inspirer", "=ds=#h1#, #w6#", "", "33.33%"};
 		{ 16, 0, "INV_Box_01", "=q6="..BabbleBoss["Jergosh the Invoker"], ""};
 		{ 17, 14150, "", "=q3=Robe of Evocation", "=ds=#s5#, #a1#", "", "40%"};
 		{ 18, 14147, "", "=q3=Cavedweller Bracers", "=ds=#s8#, #a3#", "", "40%"};
 		{ 19, 14151, "", "=q3=Chanting Blade", "=ds=#h1#, #w4#", "", "20%"};
+		{ 21, 0, "INV_Box_01", "=q6="..BabbleBoss["Bazzalan"], ""};
+		{ 22, 605, "", "=q3=Warden's Helm", "=ds=#s1#, #a2#", "", "33.33%"};
+		{ 23, 615, "", "=q3=Slayer's Pads", "=ds=#s3#, #a3#", "", "33.33%"};
+		{ 24, 616, "", "=q3=Sword of Bazzalan", "=ds=#h1#, #w10#", "", "33.33%"};
 	};
 
 		--------------------------
@@ -411,16 +428,20 @@ local BabbleZone = AtlasLoot_GetLocaleLibBabble("LibBabble-Zone-3.0")
 	AtlasLoot_Data["WorldRaresBRP1"] = {
 		{ 1, 2059, "", "=q3=Sentry Cloak", "=ds=#s4#", "", ""};
 		{ 2, 12979, "", "=q3=Firebane Cloak", "=ds=#s4#", "", ""};
-		{ 3, 12998, "", "=q3=Magician's Mantle", "=ds=#a1#, #s3#", "", ""};
-		{ 4, 12977, "", "=q3=Magefist Gloves", "=ds=#a1#, #s9#", "", ""};
-		{ 5, 2911, "", "=q3=Keller's Girdle", "=ds=#a1#, #s10#", "", ""};
-		{ 6, 12987, "", "=q3=Darkweave Breeches", "=ds=#a1#, #s11#", "", ""};
-		{ 7, 12988, "", "=q3=Starsight Tunic", "=ds=#a2#, #s5#", "", ""};
-		{ 8, 12999, "", "=q3=Drakewing Bands", "=ds=#a2#, #s8#", "", ""};
-		{ 9, 1121, "", "=q3=Feet of the Lynx", "=ds=#a2#, #s12#", "", ""};
-		{ 10, 12994, "", "=q3=Thorbia's Gauntlets", "=ds=#a3#, #s9#", "", ""};
-		{ 11, 12978, "", "=q3=Stormbringer Belt", "=ds=#a3#, #s10#", "", ""};
-		{ 12, 12982, "", "=q3=Silver-linked Footguards", "=ds=#a3#, #s12#", "", ""};
+		
+		{ 3, 12998, "", "=q3=Magician's Mantle", "=ds=#s3#, #a1#", "", ""};
+		{ 4, 12977, "", "=q3=Magefist Gloves", "=ds=#s9#, #a1#", "", ""};
+		{ 5, 2911, "", "=q3=Keller's Girdle", "=ds=#s10#, #a1#", "", ""};
+		{ 6, 12987, "", "=q3=Darkweave Breeches", "=ds=#s11#, #a1#", "", ""};
+		
+		{ 7, 12988, "", "=q3=Starsight Tunic", "=ds=#s5#, #a2#", "", ""};
+		{ 8, 12999, "", "=q3=Drakewing Bands", "=ds=#s8#, #a2#", "", ""};
+		{ 9, 1121, "", "=q3=Feet of the Lynx", "=ds=#s12#, #a2#", "", ""};
+		
+		{ 10, 12994, "", "=q3=Thorbia's Gauntlets", "=ds=#s9#, #a3#", "", ""};
+		{ 11, 12978, "", "=q3=Stormbringer Belt", "=ds=#s10#, #a3#", "", ""};
+		{ 12, 12982, "", "=q3=Silver-linked Footguards", "=ds=#s12#, #a3#", "", ""};
+		
 		{ 13, 12985, "", "=q3=Ring of Defense", "=ds=#s13#", "", ""};
 		{ 14, 12996, "", "=q3=Band of Purification", "=ds=#s13#", "", ""};
 		{ 15, 12997, "", "=q3=Redbeard Crest", "=ds=#w8#", "", ""};
@@ -439,23 +460,27 @@ local BabbleZone = AtlasLoot_GetLocaleLibBabble("LibBabble-Zone-3.0")
 		{ 27, 12984, "", "=q3=Skycaller", "=ds=#w12#", "", ""};
 		{ 28, 3021, "", "=q3=Ranger Bow", "=ds=#w2#", "", ""};
 		{ 29, 13136, "", "=q3=Lil Timmy's Peashooter", "=ds=#w5#", "", ""};	
-		{ 30, 2879, "", "=q3=Antipodean Rod", "=ds=#h4#", "", ""};
+		{ 30, 2879, "", "=q3=Antipodean Rod", "=ds=#s15#", "", ""};
 		Next = "WorldRaresP1NormalDisplay";
 	};
 
 	AtlasLoot_Data["WorldRaresBRP1HEROIC"] = {
 		{ 1, 2059, "", "=q3=Sentry Cloak", "=ds=#s4#", "", ""};
 		{ 2, 12979, "", "=q3=Firebane Cloak", "=ds=#s4#", "", ""};
-		{ 3, 12998, "", "=q3=Magician's Mantle", "=ds=#a1#, #s3#", "", ""};
-		{ 4, 12977, "", "=q3=Magefist Gloves", "=ds=#a1#, #s9#", "", ""};
-		{ 5, 2911, "", "=q3=Keller's Girdle", "=ds=#a1#, #s10#", "", ""};
-		{ 6, 12987, "", "=q3=Darkweave Breeches", "=ds=#a1#, #s11#", "", ""};
-		{ 7, 12988, "", "=q3=Starsight Tunic", "=ds=#a2#, #s5#", "", ""};
-		{ 8, 12999, "", "=q3=Drakewing Bands", "=ds=#a2#, #s8#", "", ""};
-		{ 9, 1121, "", "=q3=Feet of the Lynx", "=ds=#a2#, #s12#", "", ""};
-		{ 10, 12994, "", "=q3=Thorbia's Gauntlets", "=ds=#a3#, #s9#", "", ""};
-		{ 11, 12978, "", "=q3=Stormbringer Belt", "=ds=#a3#, #s10#", "", ""};
-		{ 12, 12982, "", "=q3=Silver-linked Footguards", "=ds=#a3#, #s12#", "", ""};
+		
+		{ 3, 12998, "", "=q3=Magician's Mantle", "=ds=#s3#, #a1#", "", ""};
+		{ 4, 12977, "", "=q3=Magefist Gloves", "=ds=#s9#, #a1#", "", ""};
+		{ 5, 2911, "", "=q3=Keller's Girdle", "=ds=#s10#, #a1#", "", ""};
+		{ 6, 12987, "", "=q3=Darkweave Breeches", "=ds=#s11#, #a1#", "", ""};
+		
+		{ 7, 12988, "", "=q3=Starsight Tunic", "=ds=#s5#, #a2#", "", ""};
+		{ 8, 12999, "", "=q3=Drakewing Bands", "=ds=#s8#, #a2#", "", ""};
+		{ 9, 1121, "", "=q3=Feet of the Lynx", "=ds=#s12#, #a2#", "", ""};
+		
+		{ 10, 12994, "", "=q3=Thorbia's Gauntlets", "=ds=#s9#, #a3#", "", ""};
+		{ 11, 12978, "", "=q3=Stormbringer Belt", "=ds=#s10#, #a3#", "", ""};
+		{ 12, 12982, "", "=q3=Silver-linked Footguards", "=ds=#s12#, #a3#", "", ""};
+		
 		{ 13, 12985, "", "=q3=Ring of Defense", "=ds=#s13#", "", ""};
 		{ 14, 12996, "", "=q3=Band of Purification", "=ds=#s13#", "", ""};
 		{ 15, 12997, "", "=q3=Redbeard Crest", "=ds=#w8#", "", ""};
@@ -474,23 +499,27 @@ local BabbleZone = AtlasLoot_GetLocaleLibBabble("LibBabble-Zone-3.0")
 		{ 27, 12984, "", "=q3=Skycaller", "=ds=#w12#", "", ""};
 		{ 28, 3021, "", "=q3=Ranger Bow", "=ds=#w2#", "", ""};
 		{ 29, 13136, "", "=q3=Lil Timmy's Peashooter", "=ds=#w5#", "", ""};	
-		{ 30, 2879, "", "=q3=Antipodean Rod", "=ds=#h4#", "", ""};
+		{ 30, 2879, "", "=q3=Antipodean Rod", "=ds=#s15#", "", ""};
 		Next = "WorldRaresP1NormalDisplay";
 	};
 
 	AtlasLoot_Data["WorldRaresP1NormalDisplay"] = {
 		{ 1, 2059, "", "=q3=Sentry Cloak", "=ds=#s4#", "", ""};
 		{ 2, 12979, "", "=q3=Firebane Cloak", "=ds=#s4#", "", ""};
-		{ 3, 12998, "", "=q3=Magician's Mantle", "=ds=#a1#, #s3#", "", ""};
-		{ 4, 12977, "", "=q3=Magefist Gloves", "=ds=#a1#, #s9#", "", ""};
-		{ 5, 2911, "", "=q3=Keller's Girdle", "=ds=#a1#, #s10#", "", ""};
-		{ 6, 12987, "", "=q3=Darkweave Breeches", "=ds=#a1#, #s11#", "", ""};
-		{ 7, 12988, "", "=q3=Starsight Tunic", "=ds=#a2#, #s5#", "", ""};
-		{ 8, 12999, "", "=q3=Drakewing Bands", "=ds=#a2#, #s8#", "", ""};
-		{ 9, 1121, "", "=q3=Feet of the Lynx", "=ds=#a2#, #s12#", "", ""};
-		{ 10, 12994, "", "=q3=Thorbia's Gauntlets", "=ds=#a3#, #s9#", "", ""};
-		{ 11, 12978, "", "=q3=Stormbringer Belt", "=ds=#a3#, #s10#", "", ""};
-		{ 12, 12982, "", "=q3=Silver-linked Footguards", "=ds=#a3#, #s12#", "", ""};
+		
+		{ 3, 12998, "", "=q3=Magician's Mantle", "=ds=#s3#, #a1#", "", ""};
+		{ 4, 12977, "", "=q3=Magefist Gloves", "=ds=#s9#, #a1#", "", ""};
+		{ 5, 2911, "", "=q3=Keller's Girdle", "=ds=#s10#, #a1#", "", ""};
+		{ 6, 12987, "", "=q3=Darkweave Breeches", "=ds=#s11#, #a1#", "", ""};
+		
+		{ 7, 12988, "", "=q3=Starsight Tunic", "=ds=#s5#, #a2#", "", ""};
+		{ 8, 12999, "", "=q3=Drakewing Bands", "=ds=#s8#, #a2#", "", ""};
+		{ 9, 1121, "", "=q3=Feet of the Lynx", "=ds=#s12#, #a2#", "", ""};
+		
+		{ 10, 12994, "", "=q3=Thorbia's Gauntlets", "=ds=#s9#, #a3#", "", ""};
+		{ 11, 12978, "", "=q3=Stormbringer Belt", "=ds=#s10#, #a3#", "", ""};
+		{ 12, 12982, "", "=q3=Silver-linked Footguards", "=ds=#s12#, #a3#", "", ""};
+		
 		{ 13, 12985, "", "=q3=Ring of Defense", "=ds=#s13#", "", ""};
 		{ 14, 12996, "", "=q3=Band of Purification", "=ds=#s13#", "", ""};
 		{ 15, 12997, "", "=q3=Redbeard Crest", "=ds=#w8#", "", ""};
@@ -509,7 +538,7 @@ local BabbleZone = AtlasLoot_GetLocaleLibBabble("LibBabble-Zone-3.0")
 		{ 27, 12984, "", "=q3=Skycaller", "=ds=#w12#", "", ""};
 		{ 28, 3021, "", "=q3=Ranger Bow", "=ds=#w2#", "", ""};
 		{ 29, 13136, "", "=q3=Lil Timmy's Peashooter", "=ds=#w5#", "", ""};	
-		{ 30, 2879, "", "=q3=Antipodean Rod", "=ds=#h4#", "", ""};
+		{ 30, 2879, "", "=q3=Antipodean Rod", "=ds=#s15#", "", ""};
 		Prev = "WorldRaresBRP1";
 	};
 
@@ -1214,10 +1243,18 @@ local BabbleZone = AtlasLoot_GetLocaleLibBabble("LibBabble-Zone-3.0")
 		{ 2, 14149, "", "=q3=Subterranean Cape", "=ds=#s4#", "", "40%"};
 		{ 3, 14148, "", "=q3=Crystalline Cuffs", "=ds=#s8#, #a1#", "", "40%"};
 		{ 4, 14145, "", "=q3=Cursed Felblade", "=ds=#h1#, #w10#", "", "20%"};
+		{ 6, 0, "INV_Box_01", "=q6="..BabbleBoss["Oggleflint"], ""};
+		{ 7, 618, "", "=q3=Sage's Mantle", "=ds=#s3#, #a1#", "", "33.33%"};
+		{ 8, 613, "", "=q3=Slayer's Helm", "=ds=#s1#, #a3#", "", "33.33%"};
+		{ 9, 604, "", "=q3=Oggleflint's Inspirer", "=ds=#h1#, #w6#", "", "33.33%"};
 		{ 16, 0, "INV_Box_01", "=q6="..BabbleBoss["Jergosh the Invoker"], ""};
 		{ 17, 14150, "", "=q3=Robe of Evocation", "=ds=#s5#, #a1#", "", "40%"};
 		{ 18, 14147, "", "=q3=Cavedweller Bracers", "=ds=#s8#, #a3#", "", "40%"};
 		{ 19, 14151, "", "=q3=Chanting Blade", "=ds=#h1#, #w4#", "", "20%"};
+		{ 21, 0, "INV_Box_01", "=q6="..BabbleBoss["Bazzalan"], ""};
+		{ 22, 605, "", "=q3=Warden's Helm", "=ds=#s1#, #a2#", "", "33.33%"};
+		{ 23, 615, "", "=q3=Slayer's Pads", "=ds=#s3#, #a3#", "", "33.33%"};
+		{ 24, 616, "", "=q3=Sword of Bazzalan", "=ds=#h1#, #w10#", "", "33.33%"};
 	};
 
 	AtlasLoot_Data["RagefireChasmBRP2HEROIC"] = {
@@ -1225,10 +1262,18 @@ local BabbleZone = AtlasLoot_GetLocaleLibBabble("LibBabble-Zone-3.0")
 		{ 2, 14149, "", "=q3=Subterranean Cape", "=ds=#s4#", "", "40%"};
 		{ 3, 14148, "", "=q3=Crystalline Cuffs", "=ds=#s8#, #a1#", "", "40%"};
 		{ 4, 14145, "", "=q3=Cursed Felblade", "=ds=#h1#, #w10#", "", "20%"};
+		{ 6, 0, "INV_Box_01", "=q6="..BabbleBoss["Oggleflint"], ""};
+		{ 7, 618, "", "=q3=Sage's Mantle", "=ds=#s3#, #a1#", "", "33.33%"};
+		{ 8, 613, "", "=q3=Slayer's Helm", "=ds=#s1#, #a3#", "", "33.33%"};
+		{ 9, 604, "", "=q3=Oggleflint's Inspirer", "=ds=#h1#, #w6#", "", "33.33%"};
 		{ 16, 0, "INV_Box_01", "=q6="..BabbleBoss["Jergosh the Invoker"], ""};
 		{ 17, 14150, "", "=q3=Robe of Evocation", "=ds=#s5#, #a1#", "", "40%"};
 		{ 18, 14147, "", "=q3=Cavedweller Bracers", "=ds=#s8#, #a3#", "", "40%"};
 		{ 19, 14151, "", "=q3=Chanting Blade", "=ds=#h1#, #w4#", "", "20%"};
+		{ 21, 0, "INV_Box_01", "=q6="..BabbleBoss["Bazzalan"], ""};
+		{ 22, 605, "", "=q3=Warden's Helm", "=ds=#s1#, #a2#", "", "33.33%"};
+		{ 23, 615, "", "=q3=Slayer's Pads", "=ds=#s3#, #a3#", "", "33.33%"};
+		{ 24, 616, "", "=q3=Sword of Bazzalan", "=ds=#h1#, #w10#", "", "33.33%"};
 	};
 
 		-------------------------
@@ -1438,21 +1483,45 @@ local BabbleZone = AtlasLoot_GetLocaleLibBabble("LibBabble-Zone-3.0")
 		-----------------------
 
 	AtlasLoot_Data["TheStockadeBRP2"] = {
-		{ 1, 0, "INV_Box_01", "=q6="..BabbleBoss["Kam Deepfury"], ""};
-		{ 2, 2280, "", "=q3=Kam's Walking Stick", "=ds=#w9#", "", "1%"};
-		{ 4, 0, "INV_Box_01", "=q6="..BabbleBoss["Bruegal Ironknuckle"], ""};
-		{ 5, 3228, "", "=q3=Jimmied Handcuffs", "=ds=#s8#, #a3#", "", "60%"};
-		{ 6, 2942, "", "=q3=Iron Knuckles", "=ds=#h1#, #w13#", "", "20%"};
-		{ 7, 2941, "", "=q3=Prison Shank", "=ds=#h1#, #w4#", "", "20%"};
+		{ 1, 0, "INV_Box_01", "=q6="..BabbleBoss["Targorr the Dread"], ""};
+		{ 2, 614, "", "=q3=Soldier's Pauldrons", "=ds=#s3#, #a3#", "", "50%"};
+		{ 3, 611, "", "=q3=Soldier's Legguards", "=ds=#s11#, #a3#", "", "50%"};
+		{ 5, 0, "INV_Box_01", "=q6="..BabbleBoss["Kam Deepfury"], ""};
+		{ 6, 607, "", "=q3=Warden's Pads", "=ds=#s3#, #a2#", "", "50%"};
+		{ 7, 612, "", "=q3=Soldier's Helmet", "=ds=#s1#, #a3#", "", "50%"};
+		{ 8, 2280, "", "=q3=Kam's Walking Stick", "=ds=#w9#", "", "1%"};
+		{ 10, 0, "INV_Box_01", "=q6="..BabbleBoss["Bazil Thredd"], ""};
+		{ 11, 606, "", "=q3=Thief's Helm", "=ds=#s1#, #a2#", "", "50%"};
+		{ 12, 609, "", "=q3=Wicked Dagger", "=ds=#h1#, #w4#", "", "50%"};
+		{ 16, 0, "INV_Box_01", "=q6="..BabbleBoss["Dextren Ward"], ""};
+		{ 17, 617, "", "=q3=Sage's Hat", "=ds=#s1#, #a1#", "", "33.33%"};
+		{ 18, 608, "", "=q3=Thief's Pads", "=ds=#s3#, #a2#", "", "33.33%"};
+		{ 19, 610, "", "=q3=Standard Issue Prisoner Shoes", "=ds=#s12#, #a2#", "", "33.33%"};
+		{ 21, 0, "INV_Box_01", "=q6="..BabbleBoss["Bruegal Ironknuckle"], ""};
+		{ 22, 3228, "", "=q3=Jimmied Handcuffs", "=ds=#s8#, #a3#", "", "60%"};
+		{ 23, 2942, "", "=q3=Iron Knuckles", "=ds=#h1#, #w13#", "", "20%"};
+		{ 24, 2941, "", "=q3=Prison Shank", "=ds=#h1#, #w4#", "", "20%"};
 	};
 
 	AtlasLoot_Data["TheStockadeBRP2HEROIC"] = {
-		{ 1, 0, "INV_Box_01", "=q6="..BabbleBoss["Kam Deepfury"], ""};
-		{ 2, 2280, "", "=q3=Kam's Walking Stick", "=ds=#w9#", "", "1%"};
-		{ 4, 0, "INV_Box_01", "=q6="..BabbleBoss["Bruegal Ironknuckle"], ""};
-		{ 5, 3228, "", "=q3=Jimmied Handcuffs", "=ds=#s8#, #a3#", "", "60%"};
-		{ 6, 2942, "", "=q3=Iron Knuckles", "=ds=#h1#, #w13#", "", "20%"};
-		{ 7, 2941, "", "=q3=Prison Shank", "=ds=#h1#, #w4#", "", "20%"};
+		{ 1, 0, "INV_Box_01", "=q6="..BabbleBoss["Targorr the Dread"], ""};
+		{ 2, 614, "", "=q3=Soldier's Pauldrons", "=ds=#s3#, #a3#", "", "50%"};
+		{ 3, 611, "", "=q3=Soldier's Legguards", "=ds=#s11#, #a3#", "", "50%"};
+		{ 5, 0, "INV_Box_01", "=q6="..BabbleBoss["Kam Deepfury"], ""};
+		{ 6, 607, "", "=q3=Warden's Pads", "=ds=#s3#, #a2#", "", "50%"};
+		{ 7, 612, "", "=q3=Soldier's Helmet", "=ds=#s1#, #a3#", "", "50%"};
+		{ 8, 2280, "", "=q3=Kam's Walking Stick", "=ds=#w9#", "", "1%"};
+		{ 10, 0, "INV_Box_01", "=q6="..BabbleBoss["Bazil Thredd"], ""};
+		{ 11, 606, "", "=q3=Thief's Helm", "=ds=#s1#, #a2#", "", "50%"};
+		{ 12, 609, "", "=q3=Wicked Dagger", "=ds=#h1#, #w4#", "", "50%"};
+		{ 16, 0, "INV_Box_01", "=q6="..BabbleBoss["Dextren Ward"], ""};
+		{ 17, 617, "", "=q3=Sage's Hat", "=ds=#s1#, #a1#", "", "33.33%"};
+		{ 18, 608, "", "=q3=Thief's Pads", "=ds=#s3#, #a2#", "", "33.33%"};
+		{ 19, 610, "", "=q3=Standard Issue Prisoner Shoes", "=ds=#s12#, #a2#", "", "33.33%"};
+		{ 21, 0, "INV_Box_01", "=q6="..BabbleBoss["Bruegal Ironknuckle"], ""};
+		{ 22, 3228, "", "=q3=Jimmied Handcuffs", "=ds=#s8#, #a3#", "", "60%"};
+		{ 23, 2942, "", "=q3=Iron Knuckles", "=ds=#h1#, #w13#", "", "20%"};
+		{ 24, 2941, "", "=q3=Prison Shank", "=ds=#h1#, #w4#", "", "20%"};
 	};
 
 		--------------------------
@@ -1601,16 +1670,20 @@ local BabbleZone = AtlasLoot_GetLocaleLibBabble("LibBabble-Zone-3.0")
 	AtlasLoot_Data["WorldRares20BRP2"] = {
 		{ 1, 2059, "", "=q3=Sentry Cloak", "=ds=#s4#", "", ""};
 		{ 2, 12979, "", "=q3=Firebane Cloak", "=ds=#s4#", "", ""};
-		{ 3, 12998, "", "=q3=Magician's Mantle", "=ds=#a1#, #s3#", "", ""};
-		{ 4, 12977, "", "=q3=Magefist Gloves", "=ds=#a1#, #s9#", "", ""};
-		{ 5, 2911, "", "=q3=Keller's Girdle", "=ds=#a1#, #s10#", "", ""};
-		{ 6, 12987, "", "=q3=Darkweave Breeches", "=ds=#a1#, #s11#", "", ""};
-		{ 7, 12988, "", "=q3=Starsight Tunic", "=ds=#a2#, #s5#", "", ""};
-		{ 8, 12999, "", "=q3=Drakewing Bands", "=ds=#a2#, #s8#", "", ""};
-		{ 9, 1121, "", "=q3=Feet of the Lynx", "=ds=#a2#, #s12#", "", ""};
-		{ 10, 12994, "", "=q3=Thorbia's Gauntlets", "=ds=#a3#, #s9#", "", ""};
-		{ 11, 12978, "", "=q3=Stormbringer Belt", "=ds=#a3#, #s10#", "", ""};
-		{ 12, 12982, "", "=q3=Silver-linked Footguards", "=ds=#a3#, #s12#", "", ""};
+		
+		{ 3, 12998, "", "=q3=Magician's Mantle", "=ds=#s3#, #a1#", "", ""};
+		{ 4, 12977, "", "=q3=Magefist Gloves", "=ds=#s9#, #a1#", "", ""};
+		{ 5, 2911, "", "=q3=Keller's Girdle", "=ds=#s10#, #a1#", "", ""};
+		{ 6, 12987, "", "=q3=Darkweave Breeches", "=ds=#s11#, #a1#", "", ""};
+		
+		{ 7, 12988, "", "=q3=Starsight Tunic", "=ds=#s5#, #a2#", "", ""};
+		{ 8, 12999, "", "=q3=Drakewing Bands", "=ds=#s8#, #a2#", "", ""};
+		{ 9, 1121, "", "=q3=Feet of the Lynx", "=ds=#s12#, #a2#", "", ""};
+		
+		{ 10, 12994, "", "=q3=Thorbia's Gauntlets", "=ds=#s9#, #a3#", "", ""};
+		{ 11, 12978, "", "=q3=Stormbringer Belt", "=ds=#s10#, #a3#", "", ""};
+		{ 12, 12982, "", "=q3=Silver-linked Footguards", "=ds=#s12#, #a3#", "", ""};
+		
 		{ 13, 12985, "", "=q3=Ring of Defense", "=ds=#s13#", "", ""};
 		{ 14, 12996, "", "=q3=Band of Purification", "=ds=#s13#", "", ""};
 		{ 15, 12997, "", "=q3=Redbeard Crest", "=ds=#w8#", "", ""};
@@ -1629,7 +1702,7 @@ local BabbleZone = AtlasLoot_GetLocaleLibBabble("LibBabble-Zone-3.0")
 		{ 27, 12984, "", "=q3=Skycaller", "=ds=#w12#", "", ""};
 		{ 28, 3021, "", "=q3=Ranger Bow", "=ds=#w2#", "", ""};
 		{ 29, 13136, "", "=q3=Lil Timmy's Peashooter", "=ds=#w5#", "", ""};	
-		{ 30, 2879, "", "=q3=Antipodean Rod", "=ds=#h4#", "", ""};
+		{ 30, 2879, "", "=q3=Antipodean Rod", "=ds=#s15#", "", ""};
 		Next = "WorldRares20P2NormalDisplay";
 		Back = "COLLECTIONMENUBRP2";
 	};
@@ -1637,16 +1710,20 @@ local BabbleZone = AtlasLoot_GetLocaleLibBabble("LibBabble-Zone-3.0")
 	AtlasLoot_Data["WorldRares20BRP2HEROIC"] = {
 		{ 1, 2059, "", "=q3=Sentry Cloak", "=ds=#s4#", "", ""};
 		{ 2, 12979, "", "=q3=Firebane Cloak", "=ds=#s4#", "", ""};
-		{ 3, 12998, "", "=q3=Magician's Mantle", "=ds=#a1#, #s3#", "", ""};
-		{ 4, 12977, "", "=q3=Magefist Gloves", "=ds=#a1#, #s9#", "", ""};
-		{ 5, 2911, "", "=q3=Keller's Girdle", "=ds=#a1#, #s10#", "", ""};
-		{ 6, 12987, "", "=q3=Darkweave Breeches", "=ds=#a1#, #s11#", "", ""};
-		{ 7, 12988, "", "=q3=Starsight Tunic", "=ds=#a2#, #s5#", "", ""};
-		{ 8, 12999, "", "=q3=Drakewing Bands", "=ds=#a2#, #s8#", "", ""};
-		{ 9, 1121, "", "=q3=Feet of the Lynx", "=ds=#a2#, #s12#", "", ""};
-		{ 10, 12994, "", "=q3=Thorbia's Gauntlets", "=ds=#a3#, #s9#", "", ""};
-		{ 11, 12978, "", "=q3=Stormbringer Belt", "=ds=#a3#, #s10#", "", ""};
-		{ 12, 12982, "", "=q3=Silver-linked Footguards", "=ds=#a3#, #s12#", "", ""};
+		
+		{ 3, 12998, "", "=q3=Magician's Mantle", "=ds=#s3#, #a1#", "", ""};
+		{ 4, 12977, "", "=q3=Magefist Gloves", "=ds=#s9#, #a1#", "", ""};
+		{ 5, 2911, "", "=q3=Keller's Girdle", "=ds=#s10#, #a1#", "", ""};
+		{ 6, 12987, "", "=q3=Darkweave Breeches", "=ds=#s11#, #a1#", "", ""};
+		
+		{ 7, 12988, "", "=q3=Starsight Tunic", "=ds=#s5#, #a2#", "", ""};
+		{ 8, 12999, "", "=q3=Drakewing Bands", "=ds=#s8#, #a2#", "", ""};
+		{ 9, 1121, "", "=q3=Feet of the Lynx", "=ds=#s12#, #a2#", "", ""};
+		
+		{ 10, 12994, "", "=q3=Thorbia's Gauntlets", "=ds=#s9#, #a3#", "", ""};
+		{ 11, 12978, "", "=q3=Stormbringer Belt", "=ds=#s10#, #a3#", "", ""};
+		{ 12, 12982, "", "=q3=Silver-linked Footguards", "=ds=#s12#, #a3#", "", ""};
+		
 		{ 13, 12985, "", "=q3=Ring of Defense", "=ds=#s13#", "", ""};
 		{ 14, 12996, "", "=q3=Band of Purification", "=ds=#s13#", "", ""};
 		{ 15, 12997, "", "=q3=Redbeard Crest", "=ds=#w8#", "", ""};
@@ -1665,7 +1742,7 @@ local BabbleZone = AtlasLoot_GetLocaleLibBabble("LibBabble-Zone-3.0")
 		{ 27, 12984, "", "=q3=Skycaller", "=ds=#w12#", "", ""};
 		{ 28, 3021, "", "=q3=Ranger Bow", "=ds=#w2#", "", ""};
 		{ 29, 13136, "", "=q3=Lil Timmy's Peashooter", "=ds=#w5#", "", ""};	
-		{ 30, 2879, "", "=q3=Antipodean Rod", "=ds=#h4#", "", ""};
+		{ 30, 2879, "", "=q3=Antipodean Rod", "=ds=#s15#", "", ""};
 		Next = "WorldRares20P2NormalDisplay";
 		Back = "COLLECTIONMENUBRP2";
 	};
@@ -1673,50 +1750,58 @@ local BabbleZone = AtlasLoot_GetLocaleLibBabble("LibBabble-Zone-3.0")
 	AtlasLoot_Data["WorldRares20P2NormalDisplay"] = {
 		{ 1, 2059, "", "=q3=Sentry Cloak", "=ds=#s4#", "", ""};
 		{ 2, 12979, "", "=q3=Firebane Cloak", "=ds=#s4#", "", ""};
-		{ 3, 12998, "", "=q3=Magician's Mantle", "=ds=#a1#, #s3#", "", ""};
-		{ 4, 12977, "", "=q3=Magefist Gloves", "=ds=#a1#, #s9#", "", ""};
-		{ 5, 2911, "", "=q3=Keller's Girdle", "=ds=#a1#, #s10#", "", ""};
-		{ 6, 12987, "", "=q3=Darkweave Breeches", "=ds=#a1#, #s11#", "", ""};
-		{ 7, 12988, "", "=q3=Starsight Tunic", "=ds=#a2#, #s5#", "", ""};
-		{ 8, 12999, "", "=q3=Drakewing Bands", "=ds=#a2#, #s8#", "", ""};
-		{ 9, 1121, "", "=q3=Feet of the Lynx", "=ds=#a2#, #s12#", "", ""};
-		{ 10, 12994, "", "=q3=Thorbia's Gauntlets", "=ds=#a3#, #s9#", "", ""};
-		{ 11, 12978, "", "=q3=Stormbringer Belt", "=ds=#a3#, #s10#", "", ""};
-		{ 12, 12982, "", "=q3=Silver-linked Footguards", "=ds=#a3#, #s12#", "", ""};
+		
+		{ 3, 12998, "", "=q3=Magician's Mantle", "=ds=#s3#, #a1#", "", ""};
+		{ 4, 12977, "", "=q3=Magefist Gloves", "=ds=#s9#, #a1#", "", ""};
+		{ 5, 2911, "", "=q3=Keller's Girdle", "=ds=#s10#, #a1#", "", ""};
+		{ 6, 12987, "", "=q3=Darkweave Breeches", "=ds=#s11#, #a1#", "", ""};
+		
+		{ 7, 12988, "", "=q3=Starsight Tunic", "=ds=#s5#, #a2#", "", ""};
+		{ 8, 12999, "", "=q3=Drakewing Bands", "=ds=#s8#, #a2#", "", ""};
+		{ 9, 1121, "", "=q3=Feet of the Lynx", "=ds=#s12#, #a2#", "", ""};
+		
+		{ 10, 12994, "", "=q3=Thorbia's Gauntlets", "=ds=#s9#, #a3#", "", ""};
+		{ 11, 12978, "", "=q3=Stormbringer Belt", "=ds=#s10#, #a3#", "", ""};
+		{ 12, 12982, "", "=q3=Silver-linked Footguards", "=ds=#s12#, #a3#", "", ""};
+		
 		{ 13, 12985, "", "=q3=Ring of Defense", "=ds=#s13#", "", ""};
 		{ 14, 12996, "", "=q3=Band of Purification", "=ds=#s13#", "", ""};
 		{ 15, 12997, "", "=q3=Redbeard Crest", "=ds=#w8#", "", ""};
 		
-		{ 17, 12990, "", "=q3=Razor's Edge", "=ds=#h1#, #w1#", "", ""};
 		{ 16, 2236, "", "=q3=Blackfang", "=ds=#h1#, #w4#", "", ""};
-		{ 20, 2194, "", "=q3=Diamond Hammer", "=ds=#h1#, #w6#", "", ""};
-		{ 21, 2256, "", "=q3=Skeletal Club", "=ds=#h1#, #w6#", "", ""};
+		{ 17, 12990, "", "=q3=Razor's Edge", "=ds=#h1#, #w1#", "", ""};
 		{ 18, 935, "", "=q3=Night Watch Shortsword", "=ds=#h1#, #w10#", "", ""};
 		{ 19, 12976, "", "=q3=Ironpatch Blade", "=ds=#h1#, #w10#", "", ""};
+		{ 20, 2194, "", "=q3=Diamond Hammer", "=ds=#h1#, #w6#", "", ""};
+		{ 21, 2256, "", "=q3=Skeletal Club", "=ds=#h1#, #w6#", "", ""};
 		{ 22, 12975, "", "=q3=Prospector Axe", "=ds=#h2#, #w1#", "", ""};
+		{ 23, 12992, "", "=q3=Searing Blade", "=ds=#h2#, #w10#", "", ""};
 		{ 24, 12983, "", "=q3=Rakzur Club", "=ds=#h2#, #w6#", "", ""};
 		{ 25, 12989, "", "=q3=Gargoyle's Bite", "=ds=#h2#, #w7#", "", ""};
-		{ 23, 12992, "", "=q3=Searing Blade", "=ds=#h2#, #w10#", "", ""};
 		{ 26, 890, "", "=q3=Twisted Chanter's Staff", "=ds=#w9#", "", ""};
+		{ 27, 12984, "", "=q3=Skycaller", "=ds=#w12#", "", ""};
 		{ 28, 3021, "", "=q3=Ranger Bow", "=ds=#w2#", "", ""};
 		{ 29, 13136, "", "=q3=Lil Timmy's Peashooter", "=ds=#w5#", "", ""};	
-		{ 27, 12984, "", "=q3=Skycaller", "=ds=#w12#", "", ""};
-		{ 30, 2879, "", "=q3=Antipodean Rod", "=ds=#h4#", "", ""};
+		{ 30, 2879, "", "=q3=Antipodean Rod", "=ds=#s15#", "", ""};
 		Prev = "WorldRares20BRP2";
 		Back = "COLLECTIONMENUBRP2";
 	};
 
 	AtlasLoot_Data["WorldRares30P2OnlyNormal1"] = { --will be mythic/heroic in phase 3
 		{ 1, 13108, "", "=q3=Tigerstrike Mantle", "=ds=#s4#", "", ""};
-		{ 2, 2721, "", "=q3=Holy Shroud", "=ds=#a1#, #s1#", "", ""};
-		{ 3, 13106, "", "=q3=Glowing Magical Bracelets", "=ds=#a1#, #s8#", "", ""};
-		{ 4, 9395, "", "=q3=Gloves of Old", "=ds=#a1#, #s9#", "", ""};
-		{ 5, 2277, "", "=q3=Necromancer Leggings", "=ds=#a1#, #s11#", "", ""};
-		{ 6, 3020, "", "=q3=Enduring Cap", "=ds=#a2#, #s1#", "", ""};
-		{ 7, 2278, "", "=q3=Forest Tracker Epaulets", "=ds=#a2#, #s3#", "", ""};
-		{ 8, 13127, "", "=q3=Frostreaver Crown", "=ds=#a3#, #s1#", "", ""};
-		{ 9, 9405, "", "=q3=Girdle of Golem Strength", "=ds=#a3#, #s10#", "", ""};
-		{ 10, 13124, "", "=q3=Ravasaur Scale Boots", "=ds=#a3#, #s12#", "", ""};
+		
+		{ 2, 2721, "", "=q3=Holy Shroud", "=ds=#s1#, #a1#", "", ""};
+		{ 3, 13106, "", "=q3=Glowing Magical Bracelets", "=ds=#s8#, #a1#", "", ""};
+		{ 4, 9395, "", "=q3=Gloves of Old", "=ds=#s9#, #a1#", "", ""};
+		{ 5, 2277, "", "=q3=Necromancer Leggings", "=ds=#s11#, #a1#", "", ""};
+		
+		{ 6, 3020, "", "=q3=Enduring Cap", "=ds=#s1#, #a2#", "", ""};
+		{ 7, 2278, "", "=q3=Forest Tracker Epaulets", "=ds=#s3#, #a2#", "", ""};
+		
+		{ 8, 13127, "", "=q3=Frostreaver Crown", "=ds=#s1#, #a3#", "", ""};
+		{ 9, 9405, "", "=q3=Girdle of Golem Strength", "=ds=#s10#, #a3#", "", ""};
+		{ 10, 13124, "", "=q3=Ravasaur Scale Boots", "=ds=#s12#, #a3#", "", ""};
+		
 		{ 11, 13084, "", "=q3=Kaleidoscope Chain", "=ds=#s2#", "", ""};
 		{ 12, 13087, "", "=q3=River Pride Choker", "=ds=#s2#", "", ""};
 
@@ -1732,21 +1817,25 @@ local BabbleZone = AtlasLoot_GetLocaleLibBabble("LibBabble-Zone-3.0")
 		{ 25, 13137, "", "=q3=Ironweaver", "=ds=#w5#", "", ""};
 		{ 26, 791, "", "=q3=Gnarled Ash Staff", "=ds=#w9#", "", ""};
 		{ 27, 13063, "", "=q3=Starfaller", "=ds=#w12#", "", ""};
-		{ 28, 2565, "", "=q3=Rod of Molten Fire", "=ds=#h4#", "", ""};
+		{ 28, 2565, "", "=q3=Rod of Molten Fire", "=ds=#s15#", "", ""};
 		Back = "COLLECTIONMENUBRP2";
 	};
 
 	AtlasLoot_Data["WorldRares30BRP2"] = {
 		{ 1, 13005, "", "=q3=Amy's Blanket", "=ds=#s4#", "", ""};
-		{ 2, 2800, "", "=q3=Black Velvet Robes", "=ds=#a1#, #s5#", "", ""};
-		{ 3, 13099, "", "=q3=Moccasins of the White Hare", "=ds=#a1#, #s12#", "", ""};
-		{ 4, 720, "", "=q3=Brawler Gloves", "=ds=#a2#, #s9#", "", ""};
-		{ 5, 13011, "", "=q3=Silver-lined Belt", "=ds=#a2#, #s10#", "", ""};
-		{ 6, 13114, "", "=q3=Troll's Bane Leggings", "=ds=#a2#, #s11#", "", ""};
-		{ 7, 13131, "", "=q3=Sparkleshell Mantle", "=ds=#a3#, #s3#", "", ""};
-		{ 8, 1717, "", "=q3=Double Link Tunic", "=ds=#a3#, #s5#", "", ""};
-		{ 9, 13012, "", "=q3=Yorgen Bracers", "=ds=#a3#, #s8#", "", ""};
-		{ 10, 13010, "", "=q3=Dreamsinger Legguards", "=ds=#a3#, #s11#", "", ""};
+		
+		{ 2, 2800, "", "=q3=Black Velvet Robes", "=ds=#s5#, #a1#", "", ""};
+		{ 3, 13099, "", "=q3=Moccasins of the White Hare", "=ds=#s12#, #a1#", "", ""};
+		
+		{ 4, 720, "", "=q3=Brawler Gloves", "=ds=#s9#, #a2#", "", ""};
+		{ 5, 13011, "", "=q3=Silver-lined Belt", "=ds=#s10#, #a2#", "", ""};
+		{ 6, 13114, "", "=q3=Troll's Bane Leggings", "=ds=#s11#, #a2#", "", ""};
+		
+		{ 7, 13131, "", "=q3=Sparkleshell Mantle", "=ds=#s3#, #a3#", "", ""};
+		{ 8, 1717, "", "=q3=Double Link Tunic", "=ds=#s5#, #a3#", "", ""};
+		{ 9, 13012, "", "=q3=Yorgen Bracers", "=ds=#s8#, #a3#", "", ""};
+		{ 10, 13010, "", "=q3=Dreamsinger Legguards", "=ds=#s11#, #a3#", "", ""};
+		
 		{ 11, 13094, "", "=q3=The Queen's Jewel", "=ds=#s13#", "", ""};
 		{ 12, 13097, "", "=q3=Thunderbrow Ring", "=ds=#s13#", "", ""};
 		{ 13, 13079, "", "=q3=Shield of Thorsen", "=ds=#w8#", "", ""};
@@ -1762,22 +1851,26 @@ local BabbleZone = AtlasLoot_GetLocaleLibBabble("LibBabble-Zone-3.0")
 		{ 24, 13049, "", "=q3=Deanship Claymore", "=ds=#h2#, #w10#", "", ""};
 		{ 25, 2098, "", "=q3=Double-barreled Shotgun", "=ds=#w5#", "", ""};
 		{ 26, 13062, "", "=q3=Thunderwood", "=ds=#w12#", "", ""};
-		{ 27, 13031, "", "=q3=Orb of Mistmantle", "=ds=#h4#", "", ""};
+		{ 27, 13031, "", "=q3=Orb of Mistmantle", "=ds=#s15#", "", ""};
 		Next = "WorldRares30P2NormalDisplay";
 		Back = "COLLECTIONMENUBRP2";
 	};
 	
 	AtlasLoot_Data["WorldRares30BRP2HEROIC"] = {
 		{ 1, 13005, "", "=q3=Amy's Blanket", "=ds=#s4#", "", ""};
-		{ 2, 2800, "", "=q3=Black Velvet Robes", "=ds=#a1#, #s5#", "", ""};
-		{ 3, 13099, "", "=q3=Moccasins of the White Hare", "=ds=#a1#, #s12#", "", ""};
-		{ 4, 720, "", "=q3=Brawler Gloves", "=ds=#a2#, #s9#", "", ""};
-		{ 5, 13011, "", "=q3=Silver-lined Belt", "=ds=#a2#, #s10#", "", ""};
-		{ 6, 13114, "", "=q3=Troll's Bane Leggings", "=ds=#a2#, #s11#", "", ""};
-		{ 7, 13131, "", "=q3=Sparkleshell Mantle", "=ds=#a3#, #s3#", "", ""};
-		{ 8, 1717, "", "=q3=Double Link Tunic", "=ds=#a3#, #s5#", "", ""};
-		{ 9, 13012, "", "=q3=Yorgen Bracers", "=ds=#a3#, #s8#", "", ""};
-		{ 10, 13010, "", "=q3=Dreamsinger Legguards", "=ds=#a3#, #s11#", "", ""};
+		
+		{ 2, 2800, "", "=q3=Black Velvet Robes", "=ds=#s5#, #a1#", "", ""};
+		{ 3, 13099, "", "=q3=Moccasins of the White Hare", "=ds=#s12#, #a1#", "", ""};
+		
+		{ 4, 720, "", "=q3=Brawler Gloves", "=ds=#s9#, #a2#", "", ""};
+		{ 5, 13011, "", "=q3=Silver-lined Belt", "=ds=#s10#, #a2#", "", ""};
+		{ 6, 13114, "", "=q3=Troll's Bane Leggings", "=ds=#s11#, #a2#", "", ""};
+		
+		{ 7, 13131, "", "=q3=Sparkleshell Mantle", "=ds=#s3#, #a3#", "", ""};
+		{ 8, 1717, "", "=q3=Double Link Tunic", "=ds=#s5#, #a3#", "", ""};
+		{ 9, 13012, "", "=q3=Yorgen Bracers", "=ds=#s8#, #a3#", "", ""};
+		{ 10, 13010, "", "=q3=Dreamsinger Legguards", "=ds=#s11#, #a3#", "", ""};
+		
 		{ 11, 13094, "", "=q3=The Queen's Jewel", "=ds=#s13#", "", ""};
 		{ 12, 13097, "", "=q3=Thunderbrow Ring", "=ds=#s13#", "", ""};
 		{ 13, 13079, "", "=q3=Shield of Thorsen", "=ds=#w8#", "", ""};
@@ -1793,22 +1886,26 @@ local BabbleZone = AtlasLoot_GetLocaleLibBabble("LibBabble-Zone-3.0")
 		{ 24, 13049, "", "=q3=Deanship Claymore", "=ds=#h2#, #w10#", "", ""};
 		{ 25, 2098, "", "=q3=Double-barreled Shotgun", "=ds=#w5#", "", ""};
 		{ 26, 13062, "", "=q3=Thunderwood", "=ds=#w12#", "", ""};
-		{ 27, 13031, "", "=q3=Orb of Mistmantle", "=ds=#h4#", "", ""};
+		{ 27, 13031, "", "=q3=Orb of Mistmantle", "=ds=#s15#", "", ""};
 		Next = "WorldRares30P2NormalDisplay";
 		Back = "COLLECTIONMENUBRP2";
 	};
 
 	AtlasLoot_Data["WorldRares30P2NormalDisplay"] = {
 		{ 1, 13005, "", "=q3=Amy's Blanket", "=ds=#s4#", "", ""};
-		{ 2, 2800, "", "=q3=Black Velvet Robes", "=ds=#a1#, #s5#", "", ""};
-		{ 3, 13099, "", "=q3=Moccasins of the White Hare", "=ds=#a1#, #s12#", "", ""};
-		{ 4, 720, "", "=q3=Brawler Gloves", "=ds=#a2#, #s9#", "", ""};
-		{ 5, 13011, "", "=q3=Silver-lined Belt", "=ds=#a2#, #s10#", "", ""};
-		{ 6, 13114, "", "=q3=Troll's Bane Leggings", "=ds=#a2#, #s11#", "", ""};
-		{ 7, 13131, "", "=q3=Sparkleshell Mantle", "=ds=#a3#, #s3#", "", ""};
-		{ 8, 1717, "", "=q3=Double Link Tunic", "=ds=#a3#, #s5#", "", ""};
-		{ 9, 13012, "", "=q3=Yorgen Bracers", "=ds=#a3#, #s8#", "", ""};
-		{ 10, 13010, "", "=q3=Dreamsinger Legguards", "=ds=#a3#, #s11#", "", ""};
+		
+		{ 2, 2800, "", "=q3=Black Velvet Robes", "=ds=#s5#, #a1#", "", ""};
+		{ 3, 13099, "", "=q3=Moccasins of the White Hare", "=ds=#s12#, #a1#", "", ""};
+		
+		{ 4, 720, "", "=q3=Brawler Gloves", "=ds=#s9#, #a2#", "", ""};
+		{ 5, 13011, "", "=q3=Silver-lined Belt", "=ds=#s10#, #a2#", "", ""};
+		{ 6, 13114, "", "=q3=Troll's Bane Leggings", "=ds=#s11#, #a2#", "", ""};
+		
+		{ 7, 13131, "", "=q3=Sparkleshell Mantle", "=ds=#s3#, #a3#", "", ""};
+		{ 8, 1717, "", "=q3=Double Link Tunic", "=ds=#s5#, #a3#", "", ""};
+		{ 9, 13012, "", "=q3=Yorgen Bracers", "=ds=#s8#, #a3#", "", ""};
+		{ 10, 13010, "", "=q3=Dreamsinger Legguards", "=ds=#s11#, #a3#", "", ""};
+		
 		{ 11, 13094, "", "=q3=The Queen's Jewel", "=ds=#s13#", "", ""};
 		{ 12, 13097, "", "=q3=Thunderbrow Ring", "=ds=#s13#", "", ""};
 		{ 13, 13079, "", "=q3=Shield of Thorsen", "=ds=#w8#", "", ""};
@@ -1824,42 +1921,48 @@ local BabbleZone = AtlasLoot_GetLocaleLibBabble("LibBabble-Zone-3.0")
 		{ 24, 13049, "", "=q3=Deanship Claymore", "=ds=#h2#, #w10#", "", ""};
 		{ 25, 2098, "", "=q3=Double-barreled Shotgun", "=ds=#w5#", "", ""};
 		{ 26, 13062, "", "=q3=Thunderwood", "=ds=#w12#", "", ""};
-		{ 27, 13031, "", "=q3=Orb of Mistmantle", "=ds=#h4#", "", ""};
+		{ 27, 13031, "", "=q3=Orb of Mistmantle", "=ds=#s15#", "", ""};
 		Prev = "WorldRares30BRP2";
 		Back = "COLLECTIONMENUBRP2";
 	};
 	
 	AtlasLoot_Data["GLYPHSP2"] = {
 		--Hunter
-		{   1, "42905", "", "=q1=Glyph of Freezing Trap", "10 #normaltrinket#" };
+		{   1, "42905", "", "=q1=Glyph of Freezing Trap",		"10 #normaltrinket#" };
 		--Mage
-		{   2, "42752", "", "=q1=Glyph of Polymorph", "10 #normaltrinket#" };
+		{   2, "42739", "", "=q1=Glyph of Fireball",			"10 #normaltrinket#" };
+		{   3, "42752", "", "=q1=Glyph of Polymorph",			"10 #normaltrinket#" };
 		--Paladin
-		{   3, "41103", "", "=q1=Glyph of Exorcism", "10 #normaltrinket#" };
-		{   4, "41105", "", "=q1=Glyph of Flash of Light", "10 #normaltrinket#" };
-		{   5, "41094", "", "=q1=Glyph of Seal of Command", "10 #normaltrinket#" };
+		{   4, "41103", "", "=q1=Glyph of Exorcism",			"10 #normaltrinket#" };
+		{   5, "41105", "", "=q1=Glyph of Flash of Light",		"10 #normaltrinket#" };
+		{   6, "41094", "", "=q1=Glyph of Seal of Command",		"10 #normaltrinket#" };
+		{   7, "41110", "", "=q1=Glyph of Seal of Light",		"10 #normaltrinket#" };
 		--Priest
-		{   6, "42397", "", "=q1=Glyph of Dispel Magic", "10 #normaltrinket#" };
-		{   7, "42399", "", "=q1=Glyph of Fear Ward", "10 #normaltrinket#" };
-		{   8, "42401", "", "=q1=Glyph of Holy Nova", "10 #normaltrinket#" };
+		{   8, "42397", "", "=q1=Glyph of Dispel Magic",		"10 #normaltrinket#" };
+		{   9, "42399", "", "=q1=Glyph of Fear Ward",			"10 #normaltrinket#" };
+		{  10, "42401", "", "=q1=Glyph of Holy Nova",			"10 #normaltrinket#" };
 		--Rogue
-		{   9, "42963", "", "=q1=Glyph of Feint", "10 #normaltrinket#" };
-		{  10, "42973", "", "=q1=Glyph of Slice and Dice", "10 #normaltrinket#" };
-		{  11, "42974", "", "=q1=Glyph of Sprint", "10 #normaltrinket#" };
+		{  11, "42963", "", "=q1=Glyph of Feint",				"10 #normaltrinket#" };
+		{  12, "42973", "", "=q1=Glyph of Slice and Dice",		"10 #normaltrinket#" };
+		{  13, "42974", "", "=q1=Glyph of Sprint",				"10 #normaltrinket#" };
 		--Shaman
-		{  12, "41527", "", "=q1=Glyph of Earthliving Weapon", "10 #normaltrinket#" };
-		{  13, "41526", "", "=q1=Glyph of Shocking", "10 #normaltrinket#" };
-		{  14, "45778", "", "=q1=Glyph of Stoneclaw Totem", "10 #normaltrinket#" };
-		{  15, "41541", "", "=q1=Glyph of Water Mastery", "10 #normaltrinket#" };
+		{  14, "41527", "", "=q1=Glyph of Earthliving Weapon",	"10 #normaltrinket#" };
+		{  15, "41526", "", "=q1=Glyph of Shocking",			"10 #normaltrinket#" };
+		{  16, "45778", "", "=q1=Glyph of Stoneclaw Totem",		"10 #normaltrinket#" };
+		{  17, "41541", "", "=q1=Glyph of Water Mastery",		"10 #normaltrinket#" };
+		{  18, "41542", "", "=q1=Glyph of Windfury Weapon",		"10 #normaltrinket#" };
 		--Warlock
-		{  16, "45785", "", "=q1=Glyph of Life Tap", "10 #normaltrinket#" };
-		{  17, "42468", "", "=q1=Glyph of Shadowburn", "10 #normaltrinket#" };
-		{  18, "45789", "", "=q1=Glyph of Soul Link", "10 #normaltrinket#" };
-		{  19, "42470", "", "=q1=Glyph of Soulstone", "10 #normaltrinket#" };
+		{  19, "45785", "", "=q1=Glyph of Life Tap",			"10 #normaltrinket#" };
+		{  20, "42468", "", "=q1=Glyph of Shadowburn",			"10 #normaltrinket#" };
+		{  21, "45789", "", "=q1=Glyph of Soul Link",			"10 #normaltrinket#" };
+		{  22, "42470", "", "=q1=Glyph of Soulstone",			"10 #normaltrinket#" };
 		--Warrior
-		{  20, "43414", "", "=q1=Glyph of Cleaving", "10 #normaltrinket#" };
-		{  21, "43430", "", "=q1=Glyph of Resonating Power", "10 #normaltrinket#" };
-		{  22, "45797", "", "=q1=Glyph of Shield Wall", "10 #normaltrinket#" };
-		{  23, "43428", "", "=q1=Glyph of Sweeping Strike", "10 #normaltrinket#" };
+		{  23, "43414", "", "=q1=Glyph of Cleaving",			"10 #normaltrinket#" };
+		{  24, "43430", "", "=q1=Glyph of Resonating Power",	"10 #normaltrinket#" };
+		{  25, "45797", "", "=q1=Glyph of Shield Wall",			"10 #normaltrinket#" };
+		{  26, "43428", "", "=q1=Glyph of Sweeping Strike",		"10 #normaltrinket#" };
 		Back = "COLLECTIONMENUBRP2";
+	};
+	
+	AtlasLoot_Data["TESTINGSHEET"] = {
 	};

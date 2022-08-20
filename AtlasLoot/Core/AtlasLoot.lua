@@ -789,8 +789,12 @@ function AtlasLoot_ShowItemsFrame(dataID, dataSource, boss, pFrame, ...)
 				]]
 				--is there a dataID
 				if dataID then
+					--if the item has a random enchant, set the phase to nil 
+					--we do not want to display anythign on random enchanted items
+					if string.find(itemButton.desc,"#m16#") then
+						itemButton.blueRingPhase = nil
 					--check for the "normal" display of bluering mythic/heroic
-					if (string.find(dataID,"(BRP(%d+))") and (not string.find(dataID,"PVP"))) then
+					elseif (string.find(dataID,"(BRP(%d+))") and (not string.find(dataID,"PVP"))) then
 						itemButton.blueRingPhase = string.match(dataID,"(BRP(%d+))");
 						if string.find(dataID,"HEROIC") then
 							itemButton.blueRingHeroic = true;

@@ -1814,6 +1814,7 @@ end
 	--Phase 2
   	AtlasLoot_TableNames["COLLECTIONMENUBRP2"] = { AL["Collections"], "Menu" };
   	AtlasLoot_TableNames["GLYPHSP2"] = { AL["Major Glyph"], "AtlasLootBlueRing" };
+  	AtlasLoot_TableNames["TESTINGSHEET"] = { AL["Collections"], "AtlasLootBlueRing" };
 	
 	AtlasLoot_TableNames["SETS20BRP2"] = { AL["Classic Sets"], "AtlasLootBlueRing" };
 	AtlasLoot_TableNames["SETS20BRP2HEROIC"] = { AL["Classic Sets"], "AtlasLootBlueRing" };

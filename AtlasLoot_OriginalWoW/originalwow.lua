@@ -3365,7 +3365,7 @@ local BabbleFaction = AtlasLoot_GetLocaleLibBabble("LibBabble-Faction-3.0")
 		{ 2, 12466, "", "=q3=Dawnspire Cord", "=ds=#s10#, #a1#", "", "4.16%"};
 		{ 3, 12464, "", "=q3=Bloodfire Talons", "=ds=#s9#, #a2#", "", "4.99%"};
 		{ 4, 10795, "", "=q3=Drakeclaw Band", "=ds=#s13# =q2=#m16#", "", "3.68%"};
-		{ 5, 10796, "", "=q3=Drakestone", "=ds=#s15#", "", "4.26%"};
+		{ 5, 10796, "", "=q3=Drakestone", "=ds=#s15# =q2=#m16#", "", "4.26%"};
 		{ 6, 10797, "", "=q3=Firebreather", "=ds=#h1#, #w10#", "", "4.57%"};
 		{ 7, 12463, "", "=q3=Drakefang Butcher", "=ds=#h2#, #w10#", "", "4.40%"};
 		{ 8, 12243, "", "=q3=Smoldering Claw", "=ds=#w7#", "", "4.50%"};
@@ -3376,7 +3376,7 @@ local BabbleFaction = AtlasLoot_GetLocaleLibBabble("LibBabble-Faction-3.0")
 		{ 2, 12466, "", "=q3=Dawnspire Cord", "=ds=#s10#, #a1#", "", "3.89%"};
 		{ 3, 12464, "", "=q3=Bloodfire Talons", "=ds=#s9#, #a2#", "", "4.10%"};
 		{ 4, 10795, "", "=q3=Drakeclaw Band", "=ds=#s13# =q2=#m16#", "", "4.46%"};
-		{ 5, 10796, "", "=q3=Drakestone", "=ds=#s15#", "", "4.47%"};
+		{ 5, 10796, "", "=q3=Drakestone", "=ds=#s15# =q2=#m16#", "", "4.47%"};
 		{ 6, 10797, "", "=q3=Firebreather", "=ds=#h1#, #w10#", "", "4.08%"};
 		{ 7, 12463, "", "=q3=Drakefang Butcher", "=ds=#h2#, #w10#", "", "5.00%"};
 		{ 8, 12243, "", "=q3=Smoldering Claw", "=ds=#w7#", "", "4.42%"};
@@ -3411,7 +3411,7 @@ local BabbleFaction = AtlasLoot_GetLocaleLibBabble("LibBabble-Faction-3.0")
 		{ 2, 12466, "", "=q3=Dawnspire Cord", "=ds=#s10#, #a1#", "", "4.12%"};
 		{ 3, 12464, "", "=q3=Bloodfire Talons", "=ds=#s9#, #a2#", "", "4.21%"};
 		{ 4, 10795, "", "=q3=Drakeclaw Band", "=ds=#s13# =q2=#m16#", "", "4.07%"};
-		{ 5, 10796, "", "=q3=Drakestone", "=ds=#s15#", "", "4.18%"};
+		{ 5, 10796, "", "=q3=Drakestone", "=ds=#s15# =q2=#m16#", "", "4.18%"};
 		{ 6, 10797, "", "=q3=Firebreather", "=ds=#h1#, #w10#", "", "4.24%"};
 		{ 7, 12463, "", "=q3=Drakefang Butcher", "=ds=#h2#, #w10#", "", "4.35%"};
 		{ 8, 12243, "", "=q3=Smoldering Claw", "=ds=#w7#", "", "4.09%"};
@@ -3426,7 +3426,7 @@ local BabbleFaction = AtlasLoot_GetLocaleLibBabble("LibBabble-Faction-3.0")
 		{ 2, 12466, "", "=q3=Dawnspire Cord", "=ds=#s10#, #a1#", "", "4.46%"};
 		{ 3, 12464, "", "=q3=Bloodfire Talons", "=ds=#s9#, #a2#", "", "5.00%"};
 		{ 4, 10795, "", "=q3=Drakeclaw Band", "=ds=#s13# =q2=#m16#", "", "4.18%"};
-		{ 5, 10796, "", "=q3=Drakestone", "=ds=#s15#", "", "4.92%"};
+		{ 5, 10796, "", "=q3=Drakestone", "=ds=#s15# =q2=#m16#", "", "4.92%"};
 		{ 6, 10797, "", "=q3=Firebreather", "=ds=#h1#, #w10#", "", "4.50%"};
 		{ 7, 12463, "", "=q3=Drakefang Butcher", "=ds=#h2#, #w10#", "", "4.58%"};
 		{ 8, 12243, "", "=q3=Smoldering Claw", "=ds=#w7#", "", "4.56%"};
