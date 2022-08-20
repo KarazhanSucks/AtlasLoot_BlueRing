@@ -4,29 +4,29 @@ local BabbleInventory = AtlasLoot_GetLocaleLibBabble("LibBabble-Inventory-3.0")
 local BabbleZone = AtlasLoot_GetLocaleLibBabble("LibBabble-Zone-3.0")
 
 
-	AtlasLoot_Data["PVPMENUBRP1"] = {
-		{ 2, "PVPDruidBRP1_A", 		"Spell_Nature_Regeneration",	"=ds="..LOCALIZED_CLASS_NAMES_MALE["DRUID"],	""};
-		{ 17, "PVPHunterBRP1_A", 	"Ability_Hunter_RunningShot",	"=ds="..LOCALIZED_CLASS_NAMES_MALE["HUNTER"],	""};
-		{ 3, "PVPMageBRP1_A", 		"Spell_Frost_IceStorm",			"=ds="..LOCALIZED_CLASS_NAMES_MALE["MAGE"],		""};
-		{ 18, "PVPPriestBRP1_A", 	"Spell_Holy_PowerWordShield",	"=ds="..LOCALIZED_CLASS_NAMES_MALE["PRIEST"],	""};
-		{ 4, "PVPPaladinBRP1_A", 	"Spell_Holy_SealOfMight",		"=ds="..LOCALIZED_CLASS_NAMES_MALE["PALADIN"],	""};
-		{ 19, "PVPRogueBRP1_A", 	"Ability_BackStab",				"=ds="..LOCALIZED_CLASS_NAMES_MALE["ROGUE"],	""};
-		{ 5, "PVPShamanBRP1_A", 	"Spell_FireResistanceTotem_01",	"=ds="..LOCALIZED_CLASS_NAMES_MALE["SHAMAN"],	""};
-		{ 20, "PVPWarlockBRP1_A", 	"Spell_Shadow_CurseOfTounges",	"=ds="..LOCALIZED_CLASS_NAMES_MALE["WARLOCK"],	""};
-		{ 6, "PVPWarriorBRP1_A", 	"INV_Shield_05",				"=ds="..LOCALIZED_CLASS_NAMES_MALE["WARRIOR"],	""};
-		{ 8, "PVPOffSetBRP1_A",		"inv_belt_13",					"=ds="..AL["PvP Off-Set"],						"=q5="..AL["Level 20 Bracket"]};
-		{ 23, "PVPAccessBRP1_A",	"inv_jewelry_trinketpvp_01",	"=ds="..AL["PvP Accessories"],					"=q5="..AL["Level 20 Bracket"]};		
+	AtlasLoot_Data["BRP1PVPMENU"] = {
+		{ 2, "BRP1PVPDruid_A", 		"Spell_Nature_Regeneration",	"=ds="..LOCALIZED_CLASS_NAMES_MALE["DRUID"],	""};
+		{ 17, "BRP1PVPHunter_A", 	"Ability_Hunter_RunningShot",	"=ds="..LOCALIZED_CLASS_NAMES_MALE["HUNTER"],	""};
+		{ 3, "BRP1PVPMage_A", 		"Spell_Frost_IceStorm",			"=ds="..LOCALIZED_CLASS_NAMES_MALE["MAGE"],		""};
+		{ 18, "BRP1PVPPriest_A", 	"Spell_Holy_PowerWordShield",	"=ds="..LOCALIZED_CLASS_NAMES_MALE["PRIEST"],	""};
+		{ 4, "BRP1PVPPaladin_A", 	"Spell_Holy_SealOfMight",		"=ds="..LOCALIZED_CLASS_NAMES_MALE["PALADIN"],	""};
+		{ 19, "BRP1PVPRogue_A", 	"Ability_BackStab",				"=ds="..LOCALIZED_CLASS_NAMES_MALE["ROGUE"],	""};
+		{ 5, "BRP1PVPShaman_A", 	"Spell_FireResistanceTotem_01",	"=ds="..LOCALIZED_CLASS_NAMES_MALE["SHAMAN"],	""};
+		{ 20, "BRP1PVPWarlock_A", 	"Spell_Shadow_CurseOfTounges",	"=ds="..LOCALIZED_CLASS_NAMES_MALE["WARLOCK"],	""};
+		{ 6, "BRP1PVPWarrior_A", 	"INV_Shield_05",				"=ds="..LOCALIZED_CLASS_NAMES_MALE["WARRIOR"],	""};
+		{ 8, "BRP1PVPOffSet_A",		"inv_belt_13",					"=ds="..AL["PvP Off-Set"],						"=q5="..AL["Level 20 Bracket"]};
+		{ 23, "BRP1PVPAccess_A",	"inv_jewelry_trinketpvp_01",	"=ds="..AL["PvP Accessories"],					"=q5="..AL["Level 20 Bracket"]};		
 	};
 
-	AtlasLoot_Data["COLLECTIONMENUBRP2"] = {
+	AtlasLoot_Data["BRP2COLLECTIONMENU"] = {
 	
-		{ 2, "WorldRares20BRP2",			"INV_BOOTS_WOLF",	"=q3="..AL["BoE Dungeon Rares"],	"=ds="..AL["Level 20 Bracket"]};
-		{ 3, "WorldRares30P2OnlyNormal1",	"INV_HELMET_16",	"=q3="..AL["BoE World Rares"],		"=ds="..AL["Level 30 Bracket"]};
-		{ 4, "WorldRares30BRP2",			"INV_MISC_ORB_01",	"=q3="..AL["BoE Dungeon Rares"],	"=ds="..AL["Level 30 Bracket"]};
+		{ 2, "BRP2WorldRares20",			"INV_BOOTS_WOLF",	"=q3="..AL["BoE Dungeon Rares"],	"=ds="..AL["Level 20 Bracket"]};
+		{ 3, "P2WorldRares30OnlyNormal1",	"INV_HELMET_16",	"=q3="..AL["BoE World Rares"],		"=ds="..AL["Level 30 Bracket"]};
+		{ 4, "BRP2WorldRares30",			"INV_MISC_ORB_01",	"=q3="..AL["BoE Dungeon Rares"],	"=ds="..AL["Level 30 Bracket"]};
 
-		{ 17, "SETS20BRP2",					"INV_SHIRT_16",		"=ds="..AL["Phase 1 Sets"],			"=ds="..AL["Level 20 Bracket"]};
+		{ 17, "BRP2SETS20",					"INV_SHIRT_16",		"=ds="..AL["Phase 1 Sets"],			"=ds="..AL["Level 20 Bracket"]};
 		
-		{ 19, "GLYPHSP2",					"INV_Feather_05",	"=ds="..AL["Major Glyph"],			"=ds="..AL["Blue Ring Vendor"]};
+		{ 19, "P2GLYPHS",					"INV_Feather_05",	"=ds="..AL["Major Glyph"],			"=ds="..AL["Blue Ring Vendor"]};
 
 		--[[	
 		{ 2, "EMBLEMOFFROSTMENU",	"inv_misc_frostemblem_01",			"=ds="..AL["Emblem of Frost Rewards"],		"=q5="..AL["Wrath of the Lich King"]};

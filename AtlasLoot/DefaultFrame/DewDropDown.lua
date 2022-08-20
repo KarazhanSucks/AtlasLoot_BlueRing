@@ -263,56 +263,56 @@ AtlasLoot_DewDropDown = {
 	[10] = {
 		[AL["Blue Ring: Phase 1"]] = {
 			[1] = {
-				{ BabbleZone["The Deadmines"], "TheDeadmines1BRP1", "Table" },
+				{ BabbleZone["The Deadmines"], "BRP1TheDeadmines1", "Table" },
 			},
 			[2] = {
-				{ BabbleZone["Ragefire Chasm"], "RagefireChasmBRP1", "Table" },
+				{ BabbleZone["Ragefire Chasm"], "BRP1RagefireChasm", "Table" },
 			},
 			[3] = {
-				{ BabbleZone["Shadowfang Keep"], "ShadowfangKeep1BRP1", "Table" },
+				{ BabbleZone["Shadowfang Keep"], "BRP1ShadowfangKeep1", "Table" },
 			},
 			[4] = {
-				{ BabbleZone["Wailing Caverns"], "WailingCaverns1BRP1", "Table" },
+				{ BabbleZone["Wailing Caverns"], "BRP1WailingCaverns1", "Table" },
 			},
 			[5] = {
-				{ AL["Classic Sets"], "SET20SBRP1", "Table" },
+				{ AL["Classic Sets"], "BRP1SETS20", "Table" },
 			},
 			[6] = {
-				{ AL["BoE World Rares"], "WorldRaresBRP1", "Table" },
+				{ AL["BoE World Rares"], "BRP1WorldRares", "Table" },
 			},
 			[7] = {
-				{ AL["PvP Rewards"], "PVPMENUBRP1", "Table" },
+				{ AL["PvP Rewards"], "BRP1PVPMENU", "Table" },
 			},
 		},
 	},
 	[11] = {
 		[AL["Blue Ring: Phase 2"]] = {
 			[1] = {
-				{ BabbleZone["Blackfathom Deeps"], "BlackfathomDeeps1BRP2", "Table" },
+				{ BabbleZone["Blackfathom Deeps"], "BRP2BlackfathomDeeps1", "Table" },
 			},
 			[2] = {
-				{ BabbleZone["The Deadmines"], "TheDeadmines1BRP2", "Table" },
+				{ BabbleZone["The Deadmines"], "BRP2TheDeadmines1", "Table" },
 			},
 			[3] = {
-				{ BabbleZone["Gnomeregan"], "Gnomeregan1BRP2", "Table" },
+				{ BabbleZone["Gnomeregan"], "BRP2Gnomeregan1", "Table" },
 			},
 			[4] = {
-				{ BabbleZone["Ragefire Chasm"], "RagefireChasmBRP2", "Table" },
+				{ BabbleZone["Ragefire Chasm"], "BRP2RagefireChasm", "Table" },
 			},
 			[5] = {
-				{ BabbleZone["Razorfen Kraul"], "RazorfenKraul1BRP2", "Table" },
+				{ BabbleZone["Razorfen Kraul"], "BRP2RazorfenKraul1", "Table" },
 			},
 			[6] = {
-				{ BabbleZone["Shadowfang Keep"], "ShadowfangKeep1BRP2", "Table" },
+				{ BabbleZone["Shadowfang Keep"], "BRP2ShadowfangKeep1", "Table" },
 			},
 			[7] = {
-				{ BabbleZone["The Stockade"], "TheStockadeBRP2", "Table" },
+				{ BabbleZone["The Stockade"], "BRP2TheStockade", "Table" },
 			},
 			[8] = {
-				{ BabbleZone["Wailing Caverns"], "WailingCaverns1BRP2", "Table" },
+				{ BabbleZone["Wailing Caverns"], "BRP2WailingCaverns1", "Table" },
 			},
 			[9] = {
-				{ AL["Sets/Collections"], "COLLECTIONMENUBRP2", "Table" },
+				{ AL["Sets/Collections"], "BRP2COLLECTIONMENU", "Table" },
 			},
 		},
 	},

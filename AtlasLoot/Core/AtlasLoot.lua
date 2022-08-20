@@ -798,24 +798,39 @@ function AtlasLoot_ShowItemsFrame(dataID, dataSource, boss, pFrame, ...)
 						itemButton.blueRingPhase = string.match(dataID,"(BRP(%d+))");
 						if string.find(dataID,"HEROIC") then
 							itemButton.blueRingHeroic = true;
+							itemButton.blueRing25Man = false;
+						elseif string.find(dataID,"25Man") then
+							itemButton.blueRingHeroic = false;
+							itemButton.blueRing25Man = true;
 						else
 							itemButton.blueRingHeroic = false;
+							itemButton.blueRing25Man = false;
 						end
 					--check if ... variable is used to store BRP data
 					elseif ... and (string.find(...,"(BRP(%d+))") and (not string.find(...,"PVP"))) then
 						itemButton.blueRingPhase = string.match(...,"(BRP(%d+))");
 						if string.find(...,"HEROIC") then
 							itemButton.blueRingHeroic = true;
+							itemButton.blueRing25Man = false;
+						elseif string.find(...,"25Man") then
+							itemButton.blueRingHeroic = false;
+							itemButton.blueRing25Man = true;
 						else
 							itemButton.blueRingHeroic = false;
+							itemButton.blueRing25Man = false;
 						end
 					--bluering check for whislist items being originally mythic/heroic
 					elseif dataSource[dataID][i][8] and string.find(dataSource[dataID][i][8],"(BRP(%d+))") and (not string.find(dataSource[dataID][i][8],"PVP")) then
-						itemButton.blueRingPhase = string.match(dataSource[dataID][i][8],"(BRP(%d+))");
+						itemButton.blueRingPhase = string.match(dataSource[dataID][i][8],"(BRP(%d+))");						
 						if string.find(dataSource[dataID][i][8],"HEROIC") then
 							itemButton.blueRingHeroic = true;
+							itemButton.blueRing25Man = false;
+						elseif string.find(dataSource[dataID][i][8],"25Man") then
+							itemButton.blueRingHeroic = false;
+							itemButton.blueRing25Man = true;
 						else
 							itemButton.blueRingHeroic = false;
+							itemButton.blueRing25Man = false;
 						end
 					else
 						itemButton.blueRingPhase = nil;
@@ -866,18 +881,22 @@ function AtlasLoot_ShowItemsFrame(dataID, dataSource, boss, pFrame, ...)
 		
 		if AtlasLoot.db.profile.Bigraid and Normal25ID and NormalID then
 			AtlasLoot10Man25ManSwitch:SetText(AL["Show 10 Man Loot"])
+			if itemButton.blueRingPhase then AtlasLoot10Man25ManSwitch:SetText("Show normal Loot") end
 			AtlasLoot10Man25ManSwitch.lootpage = NormalID
 			AtlasLoot10Man25ManSwitch:Show()
 		elseif AtlasLoot.db.profile.BigraidHeroic and Heroic25ID and HeroicID then
 			AtlasLoot10Man25ManSwitch:SetText(AL["Show 10 Man Loot"])
+			if itemButton.blueRingPhase then AtlasLoot10Man25ManSwitch:SetText("Show normal Loot") end
 			AtlasLoot10Man25ManSwitch.lootpage = HeroicID
 			AtlasLoot10Man25ManSwitch:Show()
 		elseif AtlasLoot.db.profile.HeroicMode and HeroicID and Heroic25ID then
 			AtlasLoot10Man25ManSwitch:SetText(AL["Show 25 Man Loot"]);
+			if itemButton.blueRingPhase then AtlasLoot10Man25ManSwitch:SetText("Show upgraded Loot") end
 			AtlasLoot10Man25ManSwitch.lootpage = Heroic25ID
 			AtlasLoot10Man25ManSwitch:Show();
 		elseif not AtlasLoot.db.profile.Bigraid and NormalID and Normal25ID then
 			AtlasLoot10Man25ManSwitch:SetText(AL["Show 25 Man Loot"]);
+			if itemButton.blueRingPhase then AtlasLoot10Man25ManSwitch:SetText("Show upgraded Loot") end
 			AtlasLoot10Man25ManSwitch.lootpage = Normal25ID;
 			AtlasLoot10Man25ManSwitch:Show();
 		end
@@ -1042,11 +1061,17 @@ function AtlasLoot_GenerateAtlasMenu(dataID, pFrame)
     BigraiddataID=dataID.."25Man";
     if BigraidCheck=="25Man" then
         AtlasLoot10Man25ManSwitch:SetText(AL["Show 10 Man Loot"]);
+		if dataID and string.find(dataID,"(BRP(%d+))") then
+			AtlasLoot10Man25ManSwitch:SetText("Show normal Loot")
+		end
         AtlasLoot10Man25ManSwitch.lootpage = string.sub(dataID, 1, string.len(dataID)-5);
         AtlasLoot10Man25ManSwitch:Show();
     else
         if dataSource[BigraiddataID] then
             AtlasLoot10Man25ManSwitch:SetText(AL["Show 25 Man Loot"]);
+			if dataID and string.find(dataID,"(BRP(%d+))") then
+				AtlasLoot10Man25ManSwitch:SetText("Show upgraded Loot")
+			end
             AtlasLoot10Man25ManSwitch.lootpage = BigraiddataID;
             AtlasLoot10Man25ManSwitch:Show();
         end

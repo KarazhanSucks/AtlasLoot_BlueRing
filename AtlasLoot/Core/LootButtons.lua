@@ -31,17 +31,21 @@ function AtlasLoot_GetEnchantLink(enchantID)
 end
 
 --BlueRing set default value
-local function SetBlueRingDefaultValueBasedOnPhase(stringBlueRingPhase, boolBlueRingHeroic)
+local function SetBlueRingDefaultValueBasedOnPhase(stringBlueRingPhase, boolBlueRingHeroic, boolBlueRing25Man)
 	--we are in phase 1
 	if stringBlueRingPhase == "BRP1" then
 		if boolBlueRingHeroic then
 			return 2080
+		elseif boolBlueRing25Man then
+			return 4134
 		else
 			return 4132
 		end
 	elseif stringBlueRingPhase == "BRP2" then
 		if boolBlueRingHeroic then
 			return 2087
+		elseif boolBlueRing25Man then
+			return 4141
 		else
 			return 4139
 		end
@@ -72,7 +76,7 @@ function AtlasLootItem_OnEnter()
 			local defaultBlueRingBaseValue = 0
 			--we are in a BlueRingPhase loottable
 			if this.blueRingPhase then
-				defaultBlueRingBaseValue = SetBlueRingDefaultValueBasedOnPhase(this.blueRingPhase, this.blueRingHeroic)
+				defaultBlueRingBaseValue = SetBlueRingDefaultValueBasedOnPhase(this.blueRingPhase, this.blueRingHeroic, this.blueRing25Man)
 			end
 			
             local color = strsub(getglobal("AtlasLootItem_"..this:GetID().."_Name"):GetText(), 3, 10);
@@ -270,7 +274,7 @@ function AtlasLootItem_OnClick(arg1)
 		local defaultBlueRingBaseValue = 0
 		--we are in a BlueRingPhase loottable
 		if this.blueRingPhase then
-			defaultBlueRingBaseValue = SetBlueRingDefaultValueBasedOnPhase(this.blueRingPhase, this.blueRingHeroic)
+			defaultBlueRingBaseValue = SetBlueRingDefaultValueBasedOnPhase(this.blueRingPhase, this.blueRingHeroic, this.blueRing25Man)
 		end
 		
         local iteminfo = GetItemInfo(this.itemID);
