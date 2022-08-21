@@ -36,8 +36,6 @@ local function SetBlueRingDefaultValueBasedOnPhase(stringBlueRingPhase, boolBlue
 	if stringBlueRingPhase == "BRP1" then
 		if boolBlueRingHeroic then
 			return 2080
-		elseif boolBlueRing25Man then
-			return 4134
 		else
 			return 4132
 		end
@@ -45,7 +43,7 @@ local function SetBlueRingDefaultValueBasedOnPhase(stringBlueRingPhase, boolBlue
 		if boolBlueRingHeroic then
 			return 2087
 		elseif boolBlueRing25Man then
-			return 4141
+			return 4143
 		else
 			return 4139
 		end

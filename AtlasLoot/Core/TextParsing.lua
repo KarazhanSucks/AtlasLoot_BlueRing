@@ -1110,6 +1110,7 @@ function AtlasLoot_FixText(text)
 	text = gsub(text, "#normaltrinket#", "|TInterface\\Icons\\Inv_misc_trinket6oog_tablet1:0|t");
 	text = gsub(text, "#heroictrinket#", "|TInterface\\Icons\\trinket_currency_heroic:0|t");
 	text = gsub(text, "#mythictrinket#", "|TInterface\\Icons\\trinket_currency_mythic:0|t");
+	text = gsub(text, "#phonor#", "|TInterface\\Icons\\Achievement_guildperk_honorablemention_rank2:0|t");
 
     englishFaction, _ = UnitFactionGroup("player")
     if englishFaction == "Horde" then

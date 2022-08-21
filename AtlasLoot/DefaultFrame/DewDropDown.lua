@@ -314,6 +314,9 @@ AtlasLoot_DewDropDown = {
 			[9] = {
 				{ AL["Sets/Collections"], "BRP2COLLECTIONMENU", "Table" },
 			},
+			[10] = {
+				{ AL["PvP Rewards"], "BRP2PVPMENU", "Table" },
+			},
 		},
 	},
 };

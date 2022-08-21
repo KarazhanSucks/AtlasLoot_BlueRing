@@ -33,6 +33,8 @@ local BabbleZone = AtlasLoot_GetLocaleLibBabble("LibBabble-Zone-3.0")
 --- Sets & Collections 30
 ---- Vanilla WoW Sets 30
 ---- BoE World Rares 30
+--- PvP
+---- PvP Level 30 Rare Sets
 
 	---------------------------
 	--- Dungeons & Raids 20 ---
@@ -2365,3 +2367,312 @@ local BabbleZone = AtlasLoot_GetLocaleLibBabble("LibBabble-Zone-3.0")
 		{  26, "43428", "", "=q1=Glyph of Sweeping Strike",		"10 #normaltrinket#" };
 		Back = "BRP2COLLECTIONMENU";
 	};
+
+
+	-----------
+	--- PvP ---
+	-----------
+
+		---------------------------------------
+		--- PvP Level 30 Rare Sets ---
+		---------------------------------------
+
+
+	AtlasLoot_Data["BRP2PVPDruid_A"] = {
+		{ 1, 0,	"Spell_Nature_InsectSwarm", "=ds="..LOCALIZED_CLASS_NAMES_MALE["DRUID"], "=q5="..AL["Balance"]};
+		{ 2, 518, "", "=q3=Sergeant's Wyrmhide Helm", "=ds=#a2#, #s1#", "9500 #phonor#", ""};
+		{ 3, 520, "", "=q3=Sergeant's Wyrmhide Spaulders", "=ds=#a2#, #s3#", "7800 #phonor#", ""};
+		{ 4, 519, "", "=q3=Sergeant's Wyrmhide Robes", "=ds=#a2#, #s5#", "9500 #phonor#", ""};
+		{ 5, 517, "", "=q3=Sergeant's Wyrmhide Gloves", "=ds=#a2#, #s9#", "7800 #phonor#", ""};
+		{ 6, 521, "", "=q3=Sergeant's Wyrmhide Legguards", "=ds=#a2#, #s11#", "9500 #phonor#", ""};
+
+		{ 8, 0, "Ability_Druid_Maul", "=ds="..LOCALIZED_CLASS_NAMES_MALE["DRUID"], "=q5="..AL["Feral"]};
+		{ 9, 453, "", "=q3=Sergeant's Dragonhide Helm", "=ds=#a2#, #s1#", "9500 #phonor#", ""};
+		{ 10, 456, "", "=q3=Sergeant's Dragonhide Spaulders", "=ds=#a2#, #s3#", "7800 #phonor#", ""};
+		{ 11, 455, "", "=q3=Sergeant's Dragonhide Robes", "=ds=#a2#, #s5#", "9500 #phonor#", ""};
+		{ 12, 452, "", "=q3=Sergeant's Dragonhide Gloves", "=ds=#a2#, #s9#", "7800 #phonor#", ""};
+		{ 13, 454, "", "=q3=Sergeant's Dragonhide Legguards", "=ds=#a2#, #s11#", "9500 #phonor#", ""};
+
+		{ 16, 0, "Spell_Nature_Regeneration", "=ds="..LOCALIZED_CLASS_NAMES_MALE["DRUID"], "=q5="..AL["Restoration"]};
+		{ 17, 463, "", "=q3=Sergeant's Kodohide Helm", "=ds=#a2#, #s1#", "9500 #phonor#", ""};
+		{ 18, 466, "", "=q3=Sergeant's Kodohide Spaulders", "=ds=#a2#, #s3#", "7800 #phonor#", ""};
+		{ 19, 465, "", "=q3=Sergeant's Kodohide Robes", "=ds=#a2#, #s5#", "9500 #phonor#", ""};
+		{ 20, 462, "", "=q3=Sergeant's Kodohide Gloves", "=ds=#a2#, #s9#", "7800 #phonor#", ""};
+		{ 21, 464, "", "=q3=Sergeant's Kodohide Legguards", "=ds=#a2#, #s11#", "9500 #phonor#", ""};
+		Next = "BRP2PVPHunter_A";
+		Back = "BRP2PVPMENU";
+	};
+
+	AtlasLoot_Data["BRP2PVPDruid_H"] = {
+		{ 1, 0,	"Spell_Nature_InsectSwarm", "=ds="..LOCALIZED_CLASS_NAMES_MALE["DRUID"], "=q5="..AL["Balance"]};
+		{ 2, 590, "", "=q3=Sergeant's Wyrmhide Helmlm", "=ds=#a2#, #s1#", "9500 #phonor#", ""};
+		{ 3, 586, "", "=q3=Sergeant's Wyrmhide Spaulders", "=ds=#a2#, #s3#", "7800 #phonor#", ""};
+		{ 4, 589, "", "=q3=Sergeant's Wyrmhide Robes", "=ds=#a2#, #s5#", "9500 #phonor#", ""};
+		{ 5, 587, "", "=q3=Sergeant's Wyrmhide Gloves", "=ds=#a2#, #s9#", "7800 #phonor#", ""};
+		{ 6, 588, "", "=q3=Sergeant's Wyrmhide Legguards", "=ds=#a2#, #s11#", "9500 #phonor#", ""};
+
+		{ 8, 0, "Ability_Druid_Maul", "=ds="..LOCALIZED_CLASS_NAMES_MALE["DRUID"], "=q5="..AL["Feral"]};
+		{ 9, 593, "", "=q3=Sergeant's Dragonhide Helm", "=ds=#a2#, #s1#", "9500 #phonor#", ""};
+		{ 10, 594, "", "=q3=Sergeant's Dragonhide Spaulders", "=ds=#a2#, #s3#", "7800 #phonor#", ""};
+		{ 11, 591, "", "=q3=Sergeant's Dragonhide Robes", "=ds=#a2#, #s5#", "9500 #phonor#", ""};
+		{ 12, 595, "", "=q3=Sergeant's Dragonhide Gloves", "=ds=#a2#, #s9#", "7800 #phonor#", ""};
+		{ 13, 592, "", "=q3=Sergeant's Dragonhide Legguards", "=ds=#a2#, #s11#", "9500 #phonor#", ""};
+
+		{ 16, 0, "Spell_Nature_Regeneration", "=ds="..LOCALIZED_CLASS_NAMES_MALE["DRUID"], "=q5="..AL["Restoration"]};
+		{ 17, 597, "", "=q3=Sergeant's Kodohide Helm", "=ds=#a2#, #s1#", "9500 #phonor#", ""};
+		{ 18, 599, "", "=q3=Sergeant's Kodohide Spaulders", "=ds=#a2#, #s3#", "7800 #phonor#", ""};
+		{ 19, 600, "", "=q3=Sergeant's Kodohide Robes", "=ds=#a2#, #s5#", "9500 #phonor#", ""};
+		{ 20, 596, "", "=q3=Sergeant's Kodohide Gloves", "=ds=#a2#, #s9#", "7800 #phonor#", ""};
+		{ 21, 598, "", "=q3=Sergeant's Kodohide Legguards", "=ds=#a2#, #s11#", "9500 #phonor#", ""};
+		Next = "BRP2PVPHunter_H";
+		Back = "BRP2PVPMENU";
+	};
+
+	AtlasLoot_Data["BRP2PVPHunter_A"] = {
+		{ 1, 0,	"Ability_Hunter_RunningShot", "=ds="..LOCALIZED_CLASS_NAMES_MALE["HUNTER"], ""};
+		{ 2, 449, "", "=q3=Sergeant's Chain Helm", "=ds=#a3#, #s1#", "9500 #phonor#", ""};
+		{ 3, 451, "", "=q3=Sergeant's Chain Spaulders", "=ds=#a3#, #s3#", "7800 #phonor#", ""};
+		{ 4, 447, "", "=q3=Sergeant's Chain Armor", "=ds=#a3#, #s5#", "9500 #phonor#", ""};
+		{ 5, 448, "", "=q3=Sergeant's Chain Gauntlets", "=ds=#a3#, #s9#", "7800 #phonor#", ""};
+		{ 6, 450, "", "=q3=Sergeant's Chain Leggings", "=ds=#a3#, #s11#", "9500 #phonor#", ""};
+		Prev = "BRP2PVPDruid_A";
+		Next = "BRP2PVPMage_A";
+		Back = "BRP2PVPMENU";
+	};
+
+	AtlasLoot_Data["BRP2PVPHunter_H"] = {
+		{ 1, 0,	"Ability_Hunter_RunningShot", "=ds="..LOCALIZED_CLASS_NAMES_MALE["HUNTER"], ""};
+		{ 2, 583, "", "=q3=Sergeant's Chain Helm", "=ds=#a3#, #s1#", "9500 #phonor#", ""};
+		{ 3, 585, "", "=q3=Sergeant's Chain Spaulders", "=ds=#a3#, #s3#", "7800 #phonor#", ""};
+		{ 4, 581, "", "=q3=Sergeant's Chain Armor", "=ds=#a3#, #s5#", "9500 #phonor#", ""};
+		{ 5, 582, "", "=q3=Sergeant's Chain Gauntlets", "=ds=#a3#, #s9#", "7800 #phonor#", ""};
+		{ 6, 584, "", "=q3=Sergeant's Chain Leggings", "=ds=#a3#, #s11#", "9500 #phonor#", ""};
+		Prev = "BRP2PVPDruid_H";
+		Next = "BRP2PVPMage_H";
+		Back = "BRP2PVPMENU";
+	};
+
+	AtlasLoot_Data["BRP2PVPMage_A"] = {
+		{ 1, 0,	"Spell_Frost_IceStorm", "=ds="..LOCALIZED_CLASS_NAMES_MALE["MAGE"], ""};
+		{ 2, 513, "", "=q3=Sergeant's Silk Cowl", "=ds=#a1#, #s1#", "9500 #phonor#", ""};
+		{ 3, 512, "", "=q3=Sergeant's Silk Amice", "=ds=#a1#, #s3#", "7800 #phonor#", ""};
+		{ 4, 515, "", "=q3=Sergeant's Silk Raiment", "=ds=#a1#, #s5#", "9500 #phonor#", ""};
+		{ 5, 514, "", "=q3=Sergeant's Silk Handguards", "=ds=#a1#, #s9#", "7800 #phonor#", ""};
+		{ 6, 516, "", "=q3=Sergeant's Silk Trousers", "=ds=#a1#, #s11#", "9500 #phonor#", ""};
+		Prev = "BRP2PVPHunter_A";
+		Next = "BRP2PVPPaladin_A";
+		Back = "BRP2PVPMENU";
+	};
+
+	AtlasLoot_Data["BRP2PVPMage_H"] = {
+		{ 1, 0,	"Spell_Frost_IceStorm", "=ds="..LOCALIZED_CLASS_NAMES_MALE["MAGE"], ""};
+		{ 2, 576, "", "=q3=Sergeant's Silk Cowl", "=ds=#a1#, #s1#", "9500 #phonor#", ""};
+		{ 3, 579, "", "=q3=Sergeant's Silk Amice", "=ds=#a1#, #s3#", "7800 #phonor#", ""};
+		{ 4, 577, "", "=q3=Sergeant's Silk Raiment", "=ds=#a1#, #s5#", "9500 #phonor#", ""};
+		{ 5, 580, "", "=q3=Sergeant's Silk Handguards", "=ds=#a1#, #s9#", "7800 #phonor#", ""};
+		{ 6, 578, "", "=q3=Sergeant's Silk Trousers", "=ds=#a1#, #s11#", "9500 #phonor#", ""};
+		Prev = "BRP2PVPHunter_H";
+		Next = "BRP2PVPPaladin_H";
+		Back = "BRP2PVPMENU";
+	};
+
+	AtlasLoot_Data["BRP2PVPPaladin_A"] = {
+		{ 1, 0,	"Spell_Holy_HolyBolt", "=ds="..LOCALIZED_CLASS_NAMES_MALE["PALADIN"], "=q5="..AL["Holy"]};
+		{ 2, 489, "", "=q3=Sergeant's Ornamented Headcover", "=ds=#a3#, #s1#", "9500 #phonor#", ""};
+		{ 3, 491, "", "=q3=Sergeant's Ornamented Spaulders", "=ds=#a3#, #s3#", "7800 #phonor#", ""};
+		{ 4, 487, "", "=q3=Sergeant's Ornamented Chestguard", "=ds=#a3#, #s5#", "9500 #phonor#", ""};
+		{ 5, 488, "", "=q3=Sergeant's Ornamented Gloves", "=ds=#a3#, #s9#", "7800 #phonor#", ""};
+		{ 6, 490, "", "=q3=Sergeant's Ornamented Legplates", "=ds=#a3#, #s11#", "9500 #phonor#", ""};
+
+		{ 8, 0, "Spell_Holy_AuraOfLight", "=ds="..LOCALIZED_CLASS_NAMES_MALE["PALADIN"], "=q5="..AL["Retribution"]};
+		{ 9, 509, "", "=q3=Sergeant's Scaled Helm", "=ds=#a3#, #s1#", "9500 #phonor#", ""};
+		{ 10, 510, "", "=q3=Sergeant's Scaled Shoulders", "=ds=#a3#, #s3#", "7800 #phonor#", ""};
+		{ 11, 507, "", "=q3=Sergeant's Scaled Chestpiece", "=ds=#a3#, #s5#", "9500 #phonor#", ""};
+		{ 12, 508, "", "=q3=Sergeant's Scaled Gauntlets", "=ds=#a3#, #s9#", "7800 #phonor#", ""};
+		{ 13, 511, "", "=q3=Sergeant's Scaled Legguards", "=ds=#a3#, #s11#", "9500 #phonor#", ""};
+		Prev = "BRP2PVPMage_A";
+		Next = "BRP2PVPPriest_A";
+		Back = "BRP2PVPMENU";
+	};
+
+	AtlasLoot_Data["BRP2PVPPaladin_H"] = {
+		{ 1, 0,	"Spell_Holy_HolyBolt", "=ds="..LOCALIZED_CLASS_NAMES_MALE["PALADIN"], "=q5="..AL["Holy"]};
+		{ 2, 568, "", "=q3=Sergeant's Ornamented Headcover", "=ds=#a3#, #s1#", "9500 #phonor#", ""};
+		{ 3, 570, "", "=q3=Sergeant's Ornamented Spaulders", "=ds=#a3#, #s3#", "7800 #phonor#", ""};
+		{ 4, 566, "", "=q3=Sergeant's Ornamented Chestguard", "=ds=#a3#, #s5#", "9500 #phonor#", ""};
+		{ 5, 567, "", "=q3=Sergeant's Ornamented Gloves", "=ds=#a3#, #s9#", "7800 #phonor#", ""};
+		{ 6, 569, "", "=q3=Sergeant's Ornamented Legplates", "=ds=#a3#, #s11#", "9500 #phonor#", ""};
+
+		{ 8, 0, "Spell_Holy_AuraOfLight", "=ds="..LOCALIZED_CLASS_NAMES_MALE["PALADIN"], "=q5="..AL["Retribution"]};
+		{ 9, 573, "", "=q3=Sergeant's Scaled Helm", "=ds=#a3#, #s1#", "9500 #phonor#", ""};
+		{ 10, 575, "", "=q3=Sergeant's Scaled Shoulders", "=ds=#a3#, #s3#", "7800 #phonor#", ""};
+		{ 11, 571, "", "=q3=Sergeant's Scaled Chestpiece", "=ds=#a3#, #s5#", "9500 #phonor#", ""};
+		{ 12, 572, "", "=q3=Sergeant's Scaled Gauntlets", "=ds=#a3#, #s9#", "7800 #phonor#", ""};
+		{ 13, 574, "", "=q3=Sergeant's Scaled Legguards", "=ds=#a3#, #s11#", "9500 #phonor#", ""};
+		Prev = "BRP2PVPMage_H";
+		Next = "BRP2PVPPriest_H";
+		Back = "BRP2PVPMENU";
+	};
+
+	AtlasLoot_Data["BRP2PVPPriest_A"] = {
+		{ 1, 0,	"Spell_Holy_PowerWordShield", "=ds="..LOCALIZED_CLASS_NAMES_MALE["PRIEST"], "=q5="..AL["Holy"]};
+		{ 2, 483, "", "=q3=Sergeant's Mooncloth Hood", "=ds=#a1#, #s1#", "9500 #phonor#", ""};
+		{ 3, 485, "", "=q3=Sergeant's Mooncloth Mantle", "=ds=#a1#, #s3#", "7800 #phonor#", ""};
+		{ 4, 486, "", "=q3=Sergeant's Mooncloth Robe", "=ds=#a1#, #s5#", "9500 #phonor#", ""};
+		{ 5, 482, "", "=q3=Sergeant's Mooncloth Gloves", "=ds=#a1#, #s9#", "7800 #phonor#", ""};
+		{ 6, 484, "", "=q3=Sergeant's Mooncloth Leggings", "=ds=#a1#, #s11#", "9500 #phonor#", ""};
+
+		{ 8, 0, "Spell_Shadow_AntiShadow", "=ds="..LOCALIZED_CLASS_NAMES_MALE["PRIEST"], "=q5="..AL["Shadow"]};
+		{ 9, 503, "", "=q3=Sergeant's Satin Hood", "=ds=#a1#, #s1#", "9500 #phonor#", ""};
+		{ 10, 505, "", "=q3=Sergeant's Satin Mantle", "=ds=#a1#, #s3#", "7800 #phonor#", ""};
+		{ 11, 506, "", "=q3=Sergeant's Satin Robe", "=ds=#a1#, #s5#", "9500 #phonor#", ""};
+		{ 12, 502, "", "=q3=Sergeant's Satin Gloves", "=ds=#a1#, #s9#", "7800 #phonor#", ""};
+		{ 13, 504, "", "=q3=Sergeant's Satin Leggings", "=ds=#a1#, #s11#", "9500 #phonor#", ""};
+		Prev = "BRP2PVPPaladin_A";
+		Next = "BRP2PVPRogue_A";
+		Back = "BRP2PVPMENU";
+	};
+
+	AtlasLoot_Data["BRP2PVPPriest_H"] = {
+		{ 1, 0,	"Spell_Holy_PowerWordShield", "=ds="..LOCALIZED_CLASS_NAMES_MALE["PRIEST"], "=q5="..AL["Holy"]};
+		{ 2, 557, "", "=q3=Sergeant's Mooncloth Hood", "=ds=#a1#, #s1#", "9500 #phonor#", ""};
+		{ 3, 559, "", "=q3=Sergeant's Mooncloth Mantle", "=ds=#a1#, #s3#", "7800 #phonor#", ""};
+		{ 4, 560, "", "=q3=Sergeant's Mooncloth Robe", "=ds=#a1#, #s5#", "9500 #phonor#", ""};
+		{ 5, 554, "", "=q3=Sergeant's Mooncloth Gloves", "=ds=#a1#, #s9#", "7800 #phonor#", ""};
+		{ 6, 558, "", "=q3=Sergeant's Mooncloth Leggings", "=ds=#a1#, #s11#", "9500 #phonor#", ""};
+
+		{ 8, 0, "Spell_Shadow_AntiShadow", "=ds="..LOCALIZED_CLASS_NAMES_MALE["PRIEST"], "=q5="..AL["Shadow"]};
+		{ 9, 561, "", "=q3=Sergeant's Satin Hood", "=ds=#a1#, #s1#", "9500 #phonor#", ""};
+		{ 10, 564, "", "=q3=Sergeant's Satin Mantle", "=ds=#a1#, #s3#", "7800 #phonor#", ""};
+		{ 11, 562, "", "=q3=Sergeant's Satin Robe", "=ds=#a1#, #s5#", "9500 #phonor#", ""};
+		{ 12, 565, "", "=q3=Sergeant's Satin Gloves", "=ds=#a1#, #s9#", "7800 #phonor#", ""};
+		{ 13, 563, "", "=q3=Sergeant's Satin Leggings", "=ds=#a1#, #s11#", "9500 #phonor#", ""};
+		Prev = "BRP2PVPPaladin_H";
+		Next = "BRP2PVPRogue_H";
+		Back = "BRP2PVPMENU"
+	};
+
+	AtlasLoot_Data["BRP2PVPRogue_A"] = {
+		{ 1, 0,	"Ability_BackStab", "=ds="..LOCALIZED_CLASS_NAMES_MALE["ROGUE"], ""};
+		{ 2, 468, "", "=q3=Sergeant's Leather Helm", "=ds=#a2#, #s1#", "9500 #phonor#", ""};
+		{ 3, 470, "", "=q3=Sergeant's Leather Spaulders", "=ds=#a2#, #s3#", "7800 #phonor#", ""};
+		{ 4, 471, "", "=q3=Sergeant's Leather Tunic", "=ds=#a2#, #s5#", "9500 #phonor#", ""};
+		{ 5, 467, "", "=q3=Sergeant's Leather Gloves", "=ds=#a2#, #s9#", "7800 #phonor#", ""};
+		{ 6, 469, "", "=q3=Sergeant's Leather Legguards", "=ds=#a2#, #s11#", "9500 #phonor#", ""};
+		Prev = "BRP2PVPPriest_A";
+		Next = "BRP2PVPShaman_A";
+		Back = "BRP2PVPMENU";
+	};
+
+	AtlasLoot_Data["BRP2PVPRogue_H"] = {
+		{ 1, 0,	"Ability_BackStab", "=ds="..LOCALIZED_CLASS_NAMES_MALE["ROGUE"], ""};
+		{ 2, 550, "", "=q3=Sergeant's Leather Helm", "=ds=#a2#, #s1#", "9500 #phonor#", ""};
+		{ 3, 552, "", "=q3=Sergeant's Leather Spaulders", "=ds=#a2#, #s3#", "7800 #phonor#", ""};
+		{ 4, 553, "", "=q3=Sergeant's Leather Tunic", "=ds=#a2#, #s5#", "9500 #phonor#", ""};
+		{ 5, 549, "", "=q3=Sergeant's Leather Gloves", "=ds=#a2#, #s9#", "7800 #phonor#", ""};
+		{ 6, 551, "", "=q3=Sergeant's Leather Legguards", "=ds=#a2#, #s11#", "9500 #phonor#", ""};
+		Prev = "BRP2PVPPriest_H";
+		Next = "BRP2PVPShaman_H";
+		Back = "BRP2PVPMENU";
+	};
+
+	AtlasLoot_Data["BRP2PVPShaman_A"] = {
+		{ 1, 0,	"Spell_Nature_Lightning", "=ds="..LOCALIZED_CLASS_NAMES_MALE["SHAMAN"], "=q5="..AL["Elemental"]};
+		{ 2, 479, "", "=q3=Sergeant's Mail Armor", "=ds=#a3#, #s1#", "9500 #phonor#", ""};
+		{ 3, 481, "", "=q3=Sergeant's Mail Gauntlets", "=ds=#a3#, #s3#", "7800 #phonor#", ""};
+		{ 4, 477, "", "=q3=Sergeant's Mail Helm", "=ds=#a3#, #s5#", "9500 #phonor#", ""};
+		{ 5, 478, "", "=q3=Sergeant's Mail Leggings", "=ds=#a3#, #s9#", "7800 #phonor#", ""};
+		{ 6, 480, "", "=q3=Sergeant's Mail Spaulders", "=ds=#a3#, #s11#", "9500 #phonor#", ""};
+		
+		{ 8, 0, "Spell_FireResistanceTotem_01", "=ds="..LOCALIZED_CLASS_NAMES_MALE["SHAMAN"], "=q5="..AL["Enhancement"]};
+		{ 9, 474, "", "=q3=Sergeant's Linked Helm", "=ds=", "9500 #phonor#", ""};
+		{ 10, 476, "", "=q3=Sergeant's Linked Spaulders", "=ds=#a3#, #s3#", "7800 #phonor#", ""};
+		{ 11, 472, "", "=q3=Sergeant's Linked Armor", "=ds=#a3#, #s5#", "9500 #phonor#", ""};
+		{ 12, 473, "", "=q3=Sergeant's Linked Gauntlets", "=ds=#a3#, #s9#", "7800 #phonor#", ""};
+		{ 13, 475, "", "=q3=Sergeant's Linked Leggings", "=ds=#a3#, #s11#", "9500 #phonor#", ""};
+		
+		{ 16, 0, "Spell_Nature_HealingWaveGreater", "=ds="..LOCALIZED_CLASS_NAMES_MALE["SHAMAN"], "=q5="..AL["Restoration"]};
+		{ 17, 499, "", "=q3=Sergeant's Ringmail Helm", "=ds=", "9500 #phonor#", ""};
+		{ 18, 501, "", "=q3=Sergeant's Ringmail Spaulders", "=ds=#a3#, #s3#", "7800 #phonor#", ""};
+		{ 19, 497, "", "=q3=Sergeant's Ringmail Armor", "=ds=#a3#, #s5#", "9500 #phonor#", ""};
+		{ 20, 498, "", "=q3=Sergeant's Ringmail Gauntlets", "=ds=#a3#, #s9#", "7800 #phonor#", ""};
+		{ 21, 500, "", "=q3=Sergeant's Ringmail Leggings", "=ds=#a3#, #s11#", "9500 #phonor#", ""};
+		Prev = "BRP2PVPRogue_A";
+		Next = "BRP2PVPWarlock_A";
+		Back = "BRP2PVPMENU";
+	};
+
+	AtlasLoot_Data["BRP2PVPShaman_H"] = {
+		{ 1, 0,	"Spell_Nature_Lightning", "=ds="..LOCALIZED_CLASS_NAMES_MALE["SHAMAN"], "=q5="..AL["Elemental"]};
+		{ 2, 535, "", "=q3=Sergeant's Mail Helm", "=ds=#a3#, #s1#", "9500 #phonor#", ""};
+		{ 3, 538, "", "=q3=Sergeant's Mail Spaulders", "=ds=#a3#, #s3#", "7800 #phonor#", ""};
+		{ 4, 533, "", "=q3=Sergeant's Mail Armor", "=ds=#a3#, #s5#", "9500 #phonor#", ""};
+		{ 5, 534, "", "=q3=Sergeant's Mail Gauntlets", "=ds=#a3#, #s9#", "7800 #phonor#", ""};
+		{ 6, 536, "", "=q3=Sergeant's Mail Leggings", "=ds=#a3#, #s11#", "9500 #phonor#", ""};
+
+		{ 8, 0, "Spell_FireResistanceTotem_01", "=ds="..LOCALIZED_CLASS_NAMES_MALE["SHAMAN"], "=q5="..AL["Enhancement"]};
+		{ 9, 541, "", "=q3=Sergeant's Linked Helm", "=ds=#a3#, #s1#", "9500 #phonor#", ""};
+		{ 10, 543, "", "=q3=Sergeant's Linked Spaulders", "=ds=#a3#, #s3#", "7800 #phonor#", ""};
+		{ 11, 539, "", "=q3=Sergeant's Linked Armor", "=ds=#a3#, #s5#", "9500 #phonor#", ""};
+		{ 12, 540, "", "=q3=Sergeant's Linked Gauntlets", "=ds=#a3#, #s9#", "7800 #phonor#", ""};
+		{ 13, 542, "", "=q3=Sergeant's Linked Leggings", "=ds=#a3#, #s11#", "9500 #phonor#", ""};
+
+		{ 16, 0, "Spell_Nature_HealingWaveGreater", "=ds="..LOCALIZED_CLASS_NAMES_MALE["SHAMAN"], "=q5="..AL["Restoration"]};
+		{ 17, 546, "", "=q3=Sergeant's Ringmail Helm", "=ds=#a3#, #s1#", "9500 #phonor#", ""};
+		{ 18, 548, "", "=q3=Sergeant's Ringmail Spaulders", "=ds=#a3#, #s3#", "7800 #phonor#", ""};
+		{ 19, 544, "", "=q3=Sergeant's Ringmail Armor", "=ds=#a3#, #s5#", "9500 #phonor#", ""};
+		{ 20, 545, "", "=q3=Sergeant's Ringmail Gauntlets", "=ds=#a3#, #s9#", "7800 #phonor#", ""};
+		{ 21, 547, "", "=q3=Sergeant's Ringmail Leggings", "=ds=#a3#, #s11#", "9500 #phonor#", ""};
+		Prev = "BRP2PVPRogue_H";
+		Next = "BRP2PVPWarlock_H";
+		Back = "BRP2PVPMENU";
+	};
+
+	AtlasLoot_Data["BRP2PVPWarlock_A"] = {
+		{ 1, 0,	"Spell_Shadow_CurseOfTounges", "=ds="..LOCALIZED_CLASS_NAMES_MALE["WARLOCK"], ""};
+		{ 2, 458, "", "=q3=Sergeant's Felweave Cowl", "=ds=#a1#, #s1#", "9500 #phonor#", ""};
+		{ 3, 457, "", "=q3=Sergeant's Felweave Amice", "=ds=#a1#, #s3#", "7800 #phonor#", ""};
+		{ 4, 460, "", "=q3=Sergeant's Felweave Raiment", "=ds=#a1#, #s5#", "9500 #phonor#", ""};
+		{ 5, 459, "", "=q3=Sergeant's Felweave Handguards", "=ds=#a1#, #s9#", "7800 #phonor#", ""};
+		{ 6, 461, "", "=q3=Sergeant's Felweave Trousers", "=ds=#a1#, #s11#", "9500 #phonor#", ""};
+		Prev = "BRP2PVPShaman_A";
+		Next = "BRP2PVPWarrior_A";
+		Back = "BRP2PVPMENU";
+	};
+
+	AtlasLoot_Data["BRP2PVPWarlock_H"] = {
+		{ 1, 0,	"Spell_Shadow_CurseOfTounges", "=ds="..LOCALIZED_CLASS_NAMES_MALE["WARLOCK"], ""};
+		{ 2, 528, "", "=q3=Sergeant's Felweave Cowl", "=ds=#a1#, #s1#", "9500 #phonor#", ""};
+		{ 3, 531, "", "=q3=Sergeant's Felweave Amice", "=ds=#a1#, #s3#", "7800 #phonor#", ""};
+		{ 4, 529, "", "=q3=Sergeant's Felweave Raiment", "=ds=#a1#, #s5#", "9500 #phonor#", ""};
+		{ 5, 532, "", "=q3=Sergeant's Felweave Handguards", "=ds=#a1#, #s9#", "7800 #phonor#", ""};
+		{ 6, 530, "", "=q3=Sergeant's Felweave Trousers", "=ds=#a1#, #s11#", "9500 #phonor#", ""};
+		Prev = "BRP2PVPShaman_H";
+		Next = "BRP2PVPWarrior_H";
+		Back = "BRP2PVPMENU";
+	};
+
+	AtlasLoot_Data["BRP2PVPWarrior_A"] = {
+		{ 1, 0,	"Ability_Warrior_BattleShout", "=ds="..LOCALIZED_CLASS_NAMES_MALE["WARRIOR"], ""};
+		{ 2, 494, "", "=q3=Sergeant's Plate Helm", "=ds=#a3#, #s1#", "9500 #phonor#", ""};
+		{ 3, 496, "", "=q3=Sergeant's Plate Shoulders", "=ds=#a3#, #s3#", "7800 #phonor#", ""};
+		{ 4, 492, "", "=q3=Sergeant's Plate Chestpiece", "=ds=#a3#, #s5#", "9500 #phonor#", ""};
+		{ 5, 493, "", "=q3=Sergeant's Plate Gauntlets", "=ds=#a3#, #s9#", "7800 #phonor#", ""};
+		{ 6, 495, "", "=q3=Sergeant's Plate Legguards", "=ds=#a3#, #s11#", "9500 #phonor#", ""};
+		Prev = "BRP2PVPWarlock_A";
+		--Next = "BRP2PVPOffSet_A";
+		Back = "BRP2PVPMENU";
+	};
+
+	AtlasLoot_Data["BRP2PVPWarrior_H"] = {
+		{ 1, 0,	"Ability_Warrior_BattleShout", "=ds="..LOCALIZED_CLASS_NAMES_MALE["WARRIOR"], ""};
+		{ 2, 524, "", "=q3=Sergeant's Plate Helm", "=ds=#a3#, #s1#", "9500 #phonor#", ""};
+		{ 3, 526, "", "=q3=Sergeant's Plate Shoulders", "=ds=#a3#, #s3#", "7800 #phonor#", ""};
+		{ 4, 522, "", "=q3=Sergeant's Plate Chestpiece", "=ds=#a3#, #s5#", "9500 #phonor#", ""};
+		{ 5, 523, "", "=q3=Sergeant's Plate Gauntlets", "=ds=#a3#, #s9#", "7800 #phonor#", ""};
+		{ 6, 525, "", "=q3=Sergeant's Plate Legguards", "=ds=#a3#, #s11#", "9500 #phonor#", ""};
+		Prev = "BRP2PVPWarlock_H";
+		--Next = "BRP2PVPOffSet_H";
+		Back = "BRP2PVPMENU";
+	};
+

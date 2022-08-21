@@ -1890,6 +1890,7 @@ end
 	AtlasLoot_TableNames["TESTINGSHEET34"] = { AL["Collections"], "AtlasLootBlueRing" };
 	
   --PvP	
+	--Phase 1
 	AtlasLoot_TableNames["BRP1PVPMENU"] = { AL["PvP Rewards"], "Menu" };
 	AtlasLoot_TableNames["BRP1PVPOffSet_A"] = { AL["PvP Off-Set"], "AtlasLootBlueRing" };
 	AtlasLoot_TableNames["BRP1PVPOffSet_H"] = { AL["PvP Off-Set"], "AtlasLootBlueRing" };
@@ -1914,6 +1915,32 @@ end
 	AtlasLoot_TableNames["BRP1PVPWarlock_H"] = { LOCALIZED_CLASS_NAMES_MALE["WARLOCK"], "AtlasLootBlueRing" };
 	AtlasLoot_TableNames["BRP1PVPWarrior_A"] = { LOCALIZED_CLASS_NAMES_MALE["WARRIOR"], "AtlasLootBlueRing" };
 	AtlasLoot_TableNames["BRP1PVPWarrior_H"] = { LOCALIZED_CLASS_NAMES_MALE["WARRIOR"], "AtlasLootBlueRing" };
+	
+	--Phase 2
+	AtlasLoot_TableNames["BRP2PVPMENU"] = { AL["PvP Rewards"], "Menu" };
+	AtlasLoot_TableNames["BRP2PVPOffSet_A"] = { AL["PvP Off-Set"], "AtlasLootBlueRing" };
+	AtlasLoot_TableNames["BRP2PVPOffSet_H"] = { AL["PvP Off-Set"], "AtlasLootBlueRing" };
+	AtlasLoot_TableNames["BRP2PVPAccess_A"] = { AL["PvP Accessories"], "AtlasLootBlueRing" };
+	AtlasLoot_TableNames["BRP2PVPAccess_H"] = { AL["PvP Accessories"], "AtlasLootBlueRing" };
+	
+	AtlasLoot_TableNames["BRP2PVPDruid_A"] = { LOCALIZED_CLASS_NAMES_MALE["DRUID"], "AtlasLootBlueRing" };
+	AtlasLoot_TableNames["BRP2PVPDruid_H"] = { LOCALIZED_CLASS_NAMES_MALE["DRUID"], "AtlasLootBlueRing" };
+	AtlasLoot_TableNames["BRP2PVPHunter_A"] = { LOCALIZED_CLASS_NAMES_MALE["HUNTER"], "AtlasLootBlueRing" };
+	AtlasLoot_TableNames["BRP2PVPHunter_H"] = { LOCALIZED_CLASS_NAMES_MALE["HUNTER"], "AtlasLootBlueRing" };
+	AtlasLoot_TableNames["BRP2PVPMage_A"] = { LOCALIZED_CLASS_NAMES_MALE["MAGE"], "AtlasLootBlueRing" };
+	AtlasLoot_TableNames["BRP2PVPMage_H"] = { LOCALIZED_CLASS_NAMES_MALE["MAGE"], "AtlasLootBlueRing" };
+	AtlasLoot_TableNames["BRP2PVPPaladin_A"] = { LOCALIZED_CLASS_NAMES_MALE["PALADIN"], "AtlasLootBlueRing" };
+	AtlasLoot_TableNames["BRP2PVPPaladin_H"] = { LOCALIZED_CLASS_NAMES_MALE["PALADIN"], "AtlasLootBlueRing" };
+	AtlasLoot_TableNames["BRP2PVPPriest_A"] = { LOCALIZED_CLASS_NAMES_MALE["PRIEST"], "AtlasLootBlueRing" };
+	AtlasLoot_TableNames["BRP2PVPPriest_H"] = { LOCALIZED_CLASS_NAMES_MALE["PRIEST"], "AtlasLootBlueRing" };
+	AtlasLoot_TableNames["BRP2PVPRogue_A"] = { LOCALIZED_CLASS_NAMES_MALE["ROGUE"], "AtlasLootBlueRing" };
+	AtlasLoot_TableNames["BRP2PVPRogue_H"] = { LOCALIZED_CLASS_NAMES_MALE["ROGUE"], "AtlasLootBlueRing" };
+	AtlasLoot_TableNames["BRP2PVPShaman_A"] = { LOCALIZED_CLASS_NAMES_MALE["SHAMAN"], "AtlasLootBlueRing" };
+	AtlasLoot_TableNames["BRP2PVPShaman_H"] = { LOCALIZED_CLASS_NAMES_MALE["SHAMAN"], "AtlasLootBlueRing" };
+	AtlasLoot_TableNames["BRP2PVPWarlock_A"] = { LOCALIZED_CLASS_NAMES_MALE["WARLOCK"], "AtlasLootBlueRing" };
+	AtlasLoot_TableNames["BRP2PVPWarlock_H"] = { LOCALIZED_CLASS_NAMES_MALE["WARLOCK"], "AtlasLootBlueRing" };
+	AtlasLoot_TableNames["BRP2PVPWarrior_A"] = { LOCALIZED_CLASS_NAMES_MALE["WARRIOR"], "AtlasLootBlueRing" };
+	AtlasLoot_TableNames["BRP2PVPWarrior_H"] = { LOCALIZED_CLASS_NAMES_MALE["WARRIOR"], "AtlasLootBlueRing" };
 	
 -------------
 --- Other ---
