@@ -1759,6 +1759,13 @@ end
 	AtlasLoot_TableNames["BRP2BlackfathomDeeps2HEROIC"] = { BabbleZone["Blackfathom Deeps"], "AtlasLootBlueRing" };
 	AtlasLoot_TableNames["BRP2BlackfathomDeeps125Man"] = { BabbleZone["Blackfathom Deeps"], "AtlasLootBlueRing" };
 	AtlasLoot_TableNames["BRP2BlackfathomDeeps225Man"] = { BabbleZone["Blackfathom Deeps"], "AtlasLootBlueRing" };
+	
+	AtlasLoot_TableNames["BRP3BlackfathomDeeps1"] = { BabbleZone["Blackfathom Deeps"], "AtlasLootBlueRing" };
+	AtlasLoot_TableNames["BRP3BlackfathomDeeps2"] = { BabbleZone["Blackfathom Deeps"], "AtlasLootBlueRing" };
+	AtlasLoot_TableNames["BRP3BlackfathomDeeps1HEROIC"] = { BabbleZone["Blackfathom Deeps"], "AtlasLootBlueRing" };
+	AtlasLoot_TableNames["BRP3BlackfathomDeeps2HEROIC"] = { BabbleZone["Blackfathom Deeps"], "AtlasLootBlueRing" };
+	AtlasLoot_TableNames["BRP3BlackfathomDeeps125Man"] = { BabbleZone["Blackfathom Deeps"], "AtlasLootBlueRing" };
+	AtlasLoot_TableNames["BRP3BlackfathomDeeps225Man"] = { BabbleZone["Blackfathom Deeps"], "AtlasLootBlueRing" };
   -- The Deadmines
 	AtlasLoot_TableNames["BRP1TheDeadmines1"] = { BabbleZone["The Deadmines"], "AtlasLootBlueRing" };
 	AtlasLoot_TableNames["BRP1TheDeadmines2"] = { BabbleZone["The Deadmines"], "AtlasLootBlueRing" };
@@ -1771,6 +1778,13 @@ end
 	AtlasLoot_TableNames["BRP2TheDeadmines2HEROIC"] = { BabbleZone["The Deadmines"], "AtlasLootBlueRing" }; 
 	AtlasLoot_TableNames["BRP2TheDeadmines125Man"] = { BabbleZone["The Deadmines"], "AtlasLootBlueRing" };
 	AtlasLoot_TableNames["BRP2TheDeadmines225Man"] = { BabbleZone["The Deadmines"], "AtlasLootBlueRing" };  
+	
+	AtlasLoot_TableNames["BRP3TheDeadmines1"] = { BabbleZone["The Deadmines"], "AtlasLootBlueRing" };
+	AtlasLoot_TableNames["BRP3TheDeadmines2"] = { BabbleZone["The Deadmines"], "AtlasLootBlueRing" };
+	AtlasLoot_TableNames["BRP3TheDeadmines1HEROIC"] = { BabbleZone["The Deadmines"], "AtlasLootBlueRing" };
+	AtlasLoot_TableNames["BRP3TheDeadmines2HEROIC"] = { BabbleZone["The Deadmines"], "AtlasLootBlueRing" }; 
+	AtlasLoot_TableNames["BRP3TheDeadmines125Man"] = { BabbleZone["The Deadmines"], "AtlasLootBlueRing" };
+	AtlasLoot_TableNames["BRP3TheDeadmines225Man"] = { BabbleZone["The Deadmines"], "AtlasLootBlueRing" };  
   -- Gnomeregan
 	AtlasLoot_TableNames["BRP2Gnomeregan1"] = { BabbleZone["Gnomeregan"], "AtlasLootBlueRing" };
 	AtlasLoot_TableNames["BRP2Gnomeregan2"] = { BabbleZone["Gnomeregan"], "AtlasLootBlueRing" };
@@ -1778,6 +1792,13 @@ end
 	AtlasLoot_TableNames["BRP2Gnomeregan2HEROIC"] = { BabbleZone["Gnomeregan"], "AtlasLootBlueRing" };
 	AtlasLoot_TableNames["BRP2Gnomeregan125Man"] = { BabbleZone["Gnomeregan"], "AtlasLootBlueRing" };
 	AtlasLoot_TableNames["BRP2Gnomeregan225Man"] = { BabbleZone["Gnomeregan"], "AtlasLootBlueRing" };
+	
+	AtlasLoot_TableNames["BRP3Gnomeregan1"] = { BabbleZone["Gnomeregan"], "AtlasLootBlueRing" };
+	AtlasLoot_TableNames["BRP3Gnomeregan2"] = { BabbleZone["Gnomeregan"], "AtlasLootBlueRing" };
+	AtlasLoot_TableNames["BRP3Gnomeregan1HEROIC"] = { BabbleZone["Gnomeregan"], "AtlasLootBlueRing" };
+	AtlasLoot_TableNames["BRP3Gnomeregan2HEROIC"] = { BabbleZone["Gnomeregan"], "AtlasLootBlueRing" };
+	AtlasLoot_TableNames["BRP3Gnomeregan125Man"] = { BabbleZone["Gnomeregan"], "AtlasLootBlueRing" };
+	AtlasLoot_TableNames["BRP3Gnomeregan225Man"] = { BabbleZone["Gnomeregan"], "AtlasLootBlueRing" };
   -- Ragefire Chasm
 	AtlasLoot_TableNames["BRP1RagefireChasm"] = { BabbleZone["Ragefire Chasm"], "AtlasLootBlueRing" };
 	AtlasLoot_TableNames["BRP1RagefireChasmHEROIC"] = { BabbleZone["Ragefire Chasm"], "AtlasLootBlueRing" };
@@ -1785,6 +1806,17 @@ end
 	AtlasLoot_TableNames["BRP2RagefireChasm"] = { BabbleZone["Ragefire Chasm"], "AtlasLootBlueRing" };
 	AtlasLoot_TableNames["BRP2RagefireChasmHEROIC"] = { BabbleZone["Ragefire Chasm"], "AtlasLootBlueRing" };
 	AtlasLoot_TableNames["BRP2RagefireChasm25Man"] = { BabbleZone["Ragefire Chasm"], "AtlasLootBlueRing" };
+	
+	AtlasLoot_TableNames["BRP3RagefireChasm"] = { BabbleZone["Ragefire Chasm"], "AtlasLootBlueRing" };
+	AtlasLoot_TableNames["BRP3RagefireChasmHEROIC"] = { BabbleZone["Ragefire Chasm"], "AtlasLootBlueRing" };
+	AtlasLoot_TableNames["BRP3RagefireChasm25Man"] = { BabbleZone["Ragefire Chasm"], "AtlasLootBlueRing" };
+ -- Razorfen Downs
+	AtlasLoot_TableNames["BRP3RazorfenDowns1"] = { BabbleZone["Razorfen Kraul"], "AtlasLootBlueRing" };
+	AtlasLoot_TableNames["BRP3RazorfenDowns2"] = { BabbleZone["Razorfen Kraul"], "AtlasLootBlueRing" }; 
+	AtlasLoot_TableNames["BRP3RazorfenDowns1HEROIC"] = { BabbleZone["Razorfen Kraul"], "AtlasLootBlueRing" };
+	AtlasLoot_TableNames["BRP3RazorfenDowns2HEROIC"] = { BabbleZone["Razorfen Kraul"], "AtlasLootBlueRing" };
+	AtlasLoot_TableNames["BRP3RazorfenDowns125Man"] = { BabbleZone["Razorfen Kraul"], "AtlasLootBlueRing" };
+	AtlasLoot_TableNames["BRP3RazorfenDowns225Man"] = { BabbleZone["Razorfen Kraul"], "AtlasLootBlueRing" };
   -- Razorfen Kraul
 	AtlasLoot_TableNames["BRP2RazorfenKraul1"] = { BabbleZone["Razorfen Kraul"], "AtlasLootBlueRing" };
 	AtlasLoot_TableNames["BRP2RazorfenKraul2"] = { BabbleZone["Razorfen Kraul"], "AtlasLootBlueRing" }; 
@@ -1792,6 +1824,19 @@ end
 	AtlasLoot_TableNames["BRP2RazorfenKraul2HEROIC"] = { BabbleZone["Razorfen Kraul"], "AtlasLootBlueRing" };
 	AtlasLoot_TableNames["BRP2RazorfenKraul125Man"] = { BabbleZone["Razorfen Kraul"], "AtlasLootBlueRing" };
 	AtlasLoot_TableNames["BRP2RazorfenKraul225Man"] = { BabbleZone["Razorfen Kraul"], "AtlasLootBlueRing" };
+	
+	AtlasLoot_TableNames["BRP3RazorfenKraul1"] = { BabbleZone["Razorfen Kraul"], "AtlasLootBlueRing" };
+	AtlasLoot_TableNames["BRP3RazorfenKraul2"] = { BabbleZone["Razorfen Kraul"], "AtlasLootBlueRing" }; 
+	AtlasLoot_TableNames["BRP3RazorfenKraul1HEROIC"] = { BabbleZone["Razorfen Kraul"], "AtlasLootBlueRing" };
+	AtlasLoot_TableNames["BRP3RazorfenKraul2HEROIC"] = { BabbleZone["Razorfen Kraul"], "AtlasLootBlueRing" };
+	AtlasLoot_TableNames["BRP3RazorfenKraul125Man"] = { BabbleZone["Razorfen Kraul"], "AtlasLootBlueRing" };
+	AtlasLoot_TableNames["BRP3RazorfenKraul225Man"] = { BabbleZone["Razorfen Kraul"], "AtlasLootBlueRing" };
+  -- Scarlet Monestery
+	AtlasLoot_TableNames["BRP3SMHerod"] = { BabbleZone["Scarlet Monastery"], "AtlasLootBlueRing" };
+	AtlasLoot_TableNames["BRP3SMCathedral"] = { BabbleZone["Cathedral"], "AtlasLootBlueRing" };
+	AtlasLoot_TableNames["BRP3SMGraveyard"] = { BabbleZone["Graveyard"], "AtlasLootBlueRing" };
+	AtlasLoot_TableNames["BRP3SMLibrary"] = { BabbleZone["Library"], "AtlasLootBlueRing" };
+	AtlasLoot_TableNames["BRP3SMTrash"] = { AL["Trash Mobs"].." ("..BabbleZone["Scarlet Monastery"]..")", "AtlasLootBlueRing" };	
   -- Shadowfang Keep
 	AtlasLoot_TableNames["BRP1ShadowfangKeep1"] = { BabbleZone["Shadowfang Keep"], "AtlasLootBlueRing" };
 	AtlasLoot_TableNames["BRP1ShadowfangKeep2"] = { BabbleZone["Shadowfang Keep"], "AtlasLootBlueRing" };
@@ -1804,10 +1849,21 @@ end
 	AtlasLoot_TableNames["BRP2ShadowfangKeep2HEROIC"] = { BabbleZone["Shadowfang Keep"], "AtlasLootBlueRing" };
 	AtlasLoot_TableNames["BRP2ShadowfangKeep125Man"] = { BabbleZone["Shadowfang Keep"], "AtlasLootBlueRing" };
 	AtlasLoot_TableNames["BRP2ShadowfangKeep225Man"] = { BabbleZone["Shadowfang Keep"], "AtlasLootBlueRing" };
+	
+	AtlasLoot_TableNames["BRP3ShadowfangKeep1"] = { BabbleZone["Shadowfang Keep"], "AtlasLootBlueRing" };
+	AtlasLoot_TableNames["BRP3ShadowfangKeep2"] = { BabbleZone["Shadowfang Keep"], "AtlasLootBlueRing" };
+	AtlasLoot_TableNames["BRP3ShadowfangKeep1HEROIC"] = { BabbleZone["Shadowfang Keep"], "AtlasLootBlueRing" };
+	AtlasLoot_TableNames["BRP3ShadowfangKeep2HEROIC"] = { BabbleZone["Shadowfang Keep"], "AtlasLootBlueRing" };
+	AtlasLoot_TableNames["BRP3ShadowfangKeep125Man"] = { BabbleZone["Shadowfang Keep"], "AtlasLootBlueRing" };
+	AtlasLoot_TableNames["BRP3ShadowfangKeep225Man"] = { BabbleZone["Shadowfang Keep"], "AtlasLootBlueRing" };
   -- The Stockade
 	AtlasLoot_TableNames["BRP2TheStockade"] = { BabbleZone["The Stockade"], "AtlasLootBlueRing" };
 	AtlasLoot_TableNames["BRP2TheStockadeHEROIC"] = { BabbleZone["The Stockade"], "AtlasLootBlueRing" };
 	AtlasLoot_TableNames["BRP2TheStockade25Man"] = { BabbleZone["The Stockade"], "AtlasLootBlueRing" };
+	
+	AtlasLoot_TableNames["BRP3TheStockade"] = { BabbleZone["The Stockade"], "AtlasLootBlueRing" };
+	AtlasLoot_TableNames["BRP3TheStockadeHEROIC"] = { BabbleZone["The Stockade"], "AtlasLootBlueRing" };
+	AtlasLoot_TableNames["BRP3TheStockade25Man"] = { BabbleZone["The Stockade"], "AtlasLootBlueRing" };
   -- Wailing Caverns
 	AtlasLoot_TableNames["BRP1WailingCaverns1"] = { BabbleZone["Wailing Caverns"], "AtlasLootBlueRing" };
 	AtlasLoot_TableNames["BRP1WailingCaverns2"] = { BabbleZone["Wailing Caverns"], "AtlasLootBlueRing" };
@@ -1820,6 +1876,13 @@ end
 	AtlasLoot_TableNames["BRP2WailingCaverns2HEROIC"] = { BabbleZone["Wailing Caverns"], "AtlasLootBlueRing" };
 	AtlasLoot_TableNames["BRP2WailingCaverns125Man"] = { BabbleZone["Wailing Caverns"], "AtlasLootBlueRing" };
 	AtlasLoot_TableNames["BRP2WailingCaverns225Man"] = { BabbleZone["Wailing Caverns"], "AtlasLootBlueRing" };
+	
+	AtlasLoot_TableNames["BRP3WailingCaverns1"] = { BabbleZone["Wailing Caverns"], "AtlasLootBlueRing" };
+	AtlasLoot_TableNames["BRP3WailingCaverns2"] = { BabbleZone["Wailing Caverns"], "AtlasLootBlueRing" };
+	AtlasLoot_TableNames["BRP3WailingCaverns1HEROIC"] = { BabbleZone["Wailing Caverns"], "AtlasLootBlueRing" };
+	AtlasLoot_TableNames["BRP3WailingCaverns2HEROIC"] = { BabbleZone["Wailing Caverns"], "AtlasLootBlueRing" };
+	AtlasLoot_TableNames["BRP3WailingCaverns125Man"] = { BabbleZone["Wailing Caverns"], "AtlasLootBlueRing" };
+	AtlasLoot_TableNames["BRP3WailingCaverns225Man"] = { BabbleZone["Wailing Caverns"], "AtlasLootBlueRing" };
 	
   --Sets/Collection
 	--Phase 1
@@ -1852,6 +1915,29 @@ end
 	AtlasLoot_TableNames["P2WorldRares30NormalDisplay"] = { AL["BoE Dungeon Rares"], "AtlasLootBlueRing" };	
 	
 	--Phase 3
+  	AtlasLoot_TableNames["BRP3COLLECTIONMENU"] = { AL["Collections"], "Menu" };
+  	AtlasLoot_TableNames["P3GLYPHS"] = { AL["Major Glyph"], "AtlasLootBlueRing" };
+	
+	AtlasLoot_TableNames["BRP3SETS20"] = { AL["Classic Sets"], "AtlasLootBlueRing" };
+	AtlasLoot_TableNames["BRP3SETS20HEROIC"] = { AL["Classic Sets"], "AtlasLootBlueRing" };
+	AtlasLoot_TableNames["BRP3SETS2025Man"] = { AL["Classic Sets"], "AtlasLootBlueRing" };
+	
+	AtlasLoot_TableNames["BRP3SETS40"] = { AL["Classic Sets"], "AtlasLootBlueRing" };
+	AtlasLoot_TableNames["BRP3SETS40HEROIC"] = { AL["Classic Sets"], "AtlasLootBlueRing" };
+	AtlasLoot_TableNames["BRP3SETS4025Man"] = { AL["Classic Sets"], "AtlasLootBlueRing" };
+	
+	AtlasLoot_TableNames["BRP3WorldRares20"] = { AL["BoE Dungeon Rares"], "AtlasLootBlueRing" };
+	AtlasLoot_TableNames["BRP3WorldRares20HEROIC"] = { AL["BoE Dungeon Rares"], "AtlasLootBlueRing" };
+	AtlasLoot_TableNames["BRP3WorldRares2025Man"] = { AL["BoE Dungeon Rares"], "AtlasLootBlueRing" };
+	AtlasLoot_TableNames["P3WorldRares20NormalDisplay"] = { AL["BoE Dungeon Rares"], "AtlasLootBlueRing" };
+	
+	AtlasLoot_TableNames["P3WorldRares30OnlyNormal1"] = { AL["BoE World Rares"], "AtlasLootBlueRing" };
+	AtlasLoot_TableNames["P3WorldRares30OnlyNormal2"] = { AL["BoE World Rares"], "AtlasLootBlueRing" };	
+	AtlasLoot_TableNames["BRP3WorldRares30"] = { AL["BoE Dungeon Rares"], "AtlasLootBlueRing" };	
+	AtlasLoot_TableNames["BRP3WorldRares30HEROIC"] = { AL["BoE Dungeon Rares"], "AtlasLootBlueRing" };	
+	AtlasLoot_TableNames["BRP3WorldRares3025Man"] = { AL["BoE Dungeon Rares"], "AtlasLootBlueRing" };	
+	AtlasLoot_TableNames["P3WorldRares30NormalDisplay"] = { AL["BoE Dungeon Rares"], "AtlasLootBlueRing" };
+	
 	--Testing
 	AtlasLoot_TableNames["TESTINGSHEET0"] = { AL["Collections"], "AtlasLootBlueRing" };
 	AtlasLoot_TableNames["TESTINGSHEET1"] = { AL["Collections"], "AtlasLootBlueRing" };

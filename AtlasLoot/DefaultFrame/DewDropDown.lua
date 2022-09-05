@@ -319,11 +319,60 @@ AtlasLoot_DewDropDown = {
 			},
 		},
 	},
+	[12] = {
+		[AL["Blue Ring: Phase 3"]] = {
+			[1] = {
+				{ BabbleZone["Blackfathom Deeps"], "BRP3BlackfathomDeeps1", "Table" },
+			},
+			[2] = {
+				{ BabbleZone["The Deadmines"], "BRP3TheDeadmines1", "Table" },
+			},
+			[3] = {
+				{ BabbleZone["Gnomeregan"], "BRP3Gnomeregan1", "Table" },
+			},
+			[4] = {
+				{ BabbleZone["Ragefire Chasm"], "BRP3RagefireChasm", "Table" },
+			},
+			[5] = {
+				{ BabbleZone["Razorfen Downs"], "BRP3RazorfenDowns1", "Table" },
+			},
+			[6] = {
+				{ BabbleZone["Razorfen Kraul"], "BRP3RazorfenKraul1", "Table" },
+			},
+			[7] = {
+				{ BabbleZone["Scarlet Monastery"], "BRP3Scarlet Monastery", "Submenu" },
+			},
+			[8] = {
+				{ BabbleZone["Shadowfang Keep"], "BRP3ShadowfangKeep1", "Table" },
+			},
+			[9] = {
+				{ BabbleZone["The Stockade"], "BRP3TheStockade", "Table" },
+			},
+			[10] = {
+				{ BabbleZone["Wailing Caverns"], "BRP3WailingCaverns1", "Table" },
+			},
+			[11] = {
+				{ AL["Sets/Collections"], "BRP3COLLECTIONMENU", "Table" },
+			},
+		},
+	},
 };
 
 --This table defines all the subtables needed for the full menu
 --Each sub table entry contains the text entry and the loot table that goes wih it
 AtlasLoot_DewDropDown_SubTables = {
+
+-- Blue Ring additions
+	
+	["BRP3Scarlet Monastery"] = {
+		{ BabbleZone["Armory"], "BRP3SMHerod" },
+		{ "", "BRP3SMCathedral" },
+		{ "", "BRP3SMGraveyard" },
+		{ "", "BRP3SMLibrary" },
+		{ "", "BRP3SMTrash" },
+		{ AL["Set: Chain of the Scarlet Crusade"], "BRP3SETS40" },
+	},
+
 	["BlackrockDepths"] = {
 		{ "", "BRDPyron" },
 		{ "", "BRDLordRoccor" },
