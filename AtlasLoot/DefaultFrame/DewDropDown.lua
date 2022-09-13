@@ -331,27 +331,30 @@ AtlasLoot_DewDropDown = {
 				{ BabbleZone["Gnomeregan"], "BRP3Gnomeregan1", "Table" },
 			},
 			[4] = {
-				{ BabbleZone["Ragefire Chasm"], "BRP3RagefireChasm", "Table" },
+				{ BabbleZone["Lost City of the Tol'vir"], "LostCity1", "Table" },
 			},
 			[5] = {
-				{ BabbleZone["Razorfen Downs"], "BRP3RazorfenDowns1", "Table" },
+				{ BabbleZone["Ragefire Chasm"], "BRP3RagefireChasm", "Table" },
 			},
 			[6] = {
-				{ BabbleZone["Razorfen Kraul"], "BRP3RazorfenKraul1", "Table" },
+				{ BabbleZone["Razorfen Downs"], "BRP3RazorfenDowns1", "Table" },
 			},
 			[7] = {
-				{ BabbleZone["Scarlet Monastery"], "BRP3Scarlet Monastery", "Submenu" },
+				{ BabbleZone["Razorfen Kraul"], "BRP3RazorfenKraul1", "Table" },
 			},
 			[8] = {
-				{ BabbleZone["Shadowfang Keep"], "BRP3ShadowfangKeep1", "Table" },
+				{ BabbleZone["Scarlet Monastery"], "BRP3Scarlet Monastery", "Submenu" },
 			},
 			[9] = {
-				{ BabbleZone["The Stockade"], "BRP3TheStockade", "Table" },
+				{ BabbleZone["Shadowfang Keep"], "BRP3ShadowfangKeep1", "Table" },
 			},
 			[10] = {
-				{ BabbleZone["Wailing Caverns"], "BRP3WailingCaverns1", "Table" },
+				{ BabbleZone["The Stockade"], "BRP3TheStockade", "Table" },
 			},
 			[11] = {
+				{ BabbleZone["Wailing Caverns"], "BRP3WailingCaverns1", "Table" },
+			},
+			[12] = {
 				{ AL["Sets/Collections"], "BRP3COLLECTIONMENU", "Table" },
 			},
 		},

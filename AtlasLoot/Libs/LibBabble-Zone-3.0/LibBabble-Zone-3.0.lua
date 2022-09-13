@@ -131,6 +131,7 @@ lib:SetBaseTranslations {
 	["Krasus' Landing"] = "Krasus' Landing",
 	Library = "Library",
 	["Loch Modan"] = "Loch Modan",
+	["Lost City of the Tol'vir"] = "Lost City of the Tol'vir",
 	["Lower Blackrock Spire"] = "Lower Blackrock Spire",
 	["Magisters' Terrace"] = "Magisters' Terrace",
 	["Magtheridon's Lair"] = "Magtheridon's Lair",

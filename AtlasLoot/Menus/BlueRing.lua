@@ -56,7 +56,7 @@ local BabbleZone = AtlasLoot_GetLocaleLibBabble("LibBabble-Zone-3.0")
 		{ 17, "BRP3SETS20",					"INV_SHIRT_16",			"=ds="..AL["Phase 1 Sets"],			"=ds="..AL["Level 20 Bracket"]};
 		{ 18, "BRP3SETS40",					"INV_CHEST_CHAIN_07",	"=ds="..AL["Phase 3 Sets"],			"=ds="..AL["Level 40 Bracket"]};
 
-		{ 20, "P3GLYPHS",					"INV_Feather_05",		"=ds="..AL["Major Glyph"],			"=ds="..AL["Blue Ring Vendor"]};
+		{ 20, "P3GLYPHS1",					"INV_Feather_05",		"=ds="..AL["Major Glyph"],			"=ds="..AL["Blue Ring Vendor"]};
 
 		--[[	
 		{ 2, "EMBLEMOFFROSTMENU",	"inv_misc_frostemblem_01",			"=ds="..AL["Emblem of Frost Rewards"],		"=q5="..AL["Wrath of the Lich King"]};
